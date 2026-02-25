@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+<h:head>
+    <title>Tickets</title>
+</h:head>
+<h:body>
+    <h:form>
+        <p:menubar>
+            <p:menuitem value="Home" outcome="index" />
+            <p:menuitem value="Events" outcome="events" />
+            <p:menuitem value="Venues" outcome="venues" />
+            <p:menuitem value="Special Operations" outcome="special" />
+            <p:menuitem value="Import" outcome="import" />
+            <p:menuitem value="Import History" outcome="import-history" />
+            <p:menuitem value="Logout" action="#{authBean.logout()}" />
+        </p:menubar>
+    </h:form>
+
+    <h1>Tickets</h1>
+
+    <h:form id="ticketsForm">
+        <p:messages/>
+
+        <p:poll interval="5" listener="#{ticketBean.loadTickets}" update="ticketsForm"/>
+
+        <p:commandButton value="Create New Ticket" onclick="PF('createDialog').show();" type="button"/>
+
+        <p:dataTable value="#{ticketBean.tickets}" var="ticket" style="margin-top: 20px;"
+                     filteredValue="#{ticketBean.filteredTickets}" widgetVar="ticketTable">
+            <p:column headerText="ID" sortBy="#{ticket.id}">
+                <h:outputText value="#{ticket.id}"/>
+            </p:column>
+            <p:column headerText="Name" sortBy="#{ticket.name}" filterBy="#{ticket.name}" filterMatchMode="exact">
+                <h:outputText value="#{ticket.name}"/>
+            </p:column>
+            <p:column headerText="Coord X" sortBy="#{ticket.coordinates.x}">
+                <h:outputText value="#{ticket.coordinates.x}"/>
+            </p:column>
+            <p:column headerText="Coord Y" sortBy="#{ticket.coordinates.y}">
+                <h:outputText value="#{ticket.coordinates.y}"/>
+            </p:column>
+            <p:column headerText="Created" sortBy="#{ticket.creationDate}">
+                <h:outputText value="#{ticket.creationDate}">
+                    <f:convertDateTime pattern="yyyy-MM-dd HH:mm"/>
+                </h:outputText>
+            </p:column>
+            <p:column headerText="Event" sortBy="#{ticket.event.name}" filterBy="#{ticket.event.name}" filterMatchMode="exact">
+                <h:outputText value="#{ticket.event.name}"/>
+            </p:column>
+            <p:column headerText="Venue" sortBy="#{ticket.venue.name}" filterBy="#{ticket.venue.name}" filterMatchMode="exact">
+                <h:outputText value="#{ticket.venue.name}"/>
+            </p:column>
+            <p:column headerText="Price" sortBy="#{ticket.price}">
+                <h:outputText value="#{ticket.price}"/>
+            </p:column>
+            <p:column headerText="Type" sortBy="#{ticket.type}">
+                <h:outputText value="#{ticket.type}"/>
+            </p:column>
+            <p:column headerText="Discount" sortBy="#{ticket.discount}">
+                <h:outputText value="#{ticket.discount}"/>
+            </p:column>
+            <p:column headerText="Number" sortBy="#{ticket.number}">
+                <h:outputText value="#{ticket.number}"/>
+            </p:column>
+            <p:column headerText="Person Passport" filterBy="#{ticket.person.passportID}" filterMatchMode="exact">
+                <h:outputText value="#{ticket.person != null ? ticket.person.passportID : '-'}"/>
+            </p:column>
+            <p:column headerText="Actions">
+                <p:commandButton value="Edit" action="#{ticketBean.setSelectedTicket(ticket)}"
+                                 onclick="PF('editDialog').show();" update=":editForm"/>
+                <p:commandButton value="Delete" action="#{ticketBean.deleteTicket(ticket.id)}"
+                                 update="ticketsForm"/>
+            </p:column>
+        </p:dataTable>
+
+        <p:panelGrid columns="3" style="margin-top: 10px;">
+            <p:commandButton value="Previous" action="#{ticketBean.previousPage()}"
+                             update="ticketsForm" disabled="#{ticketBean.page == 0}"/>
+            <h:outputText value="Page #{ticketBean.page + 1}"/>
+            <p:commandButton value="Next" action="#{ticketBean.nextPage()}"
+                             update="ticketsForm"/>
+        </p:panelGrid>
+    </h:form>
+
+    <p:dialog header="Create Ticket" widgetVar="createDialog" modal="true" width="600" height="600" contentStyle="overflow-y: auto;">
+        <h:form id="createForm">
+            <p:panelGrid columns="2">
+                <h:outputLabel value="Name:"/>
+                <p:inputText value="#{ticketBean.newTicket.name}" required="true"/>
+
+                <h:outputLabel value="Coordinates X:"/>
+                <p:inputText value="#{ticketBean.newTicket.coordinates.x}" required="true"/>
+
+                <h:outputLabel value="Coordinates Y:"/>
+                <p:inputText value="#{ticketBean.newTicket.coordinates.y}" required="true"/>
+
+                <h:outputLabel value="Event:"/>
+                <p:selectOneMenu value="#{ticketBean.selectedEventId}" required="true">
+                    <f:selectItem itemLabel="Select Event" itemValue="#{null}" noSelectionOption="true"/>
+                    <f:selectItems value="#{ticketBean.events}" var="event"
+                                   itemLabel="#{event.name}" itemValue="#{event.id}"/>
+                </p:selectOneMenu>
+
+                <h:outputLabel value="Venue:"/>
+                <p:selectOneMenu value="#{ticketBean.selectedVenueId}" required="true">
+                    <f:selectItem itemLabel="Select Venue" itemValue="#{null}" noSelectionOption="true"/>
+                    <f:selectItems value="#{ticketBean.venues}" var="venue"
+                                   itemLabel="#{venue.name}" itemValue="#{venue.id}"/>
+                </p:selectOneMenu>
+
+                <h:outputLabel value="Price:"/>
+                <p:inputText value="#{ticketBean.newTicket.price}" required="true"/>
+
+                <h:outputLabel value="Type:"/>
+                <p:selectOneMenu value="#{ticketBean.newTicket.type}" required="true">
+                    <f:selectItem itemLabel="Select Type" itemValue="#{null}" noSelectionOption="true"/>
+                    <f:selectItems value="#{ticketBean.ticketTypes}"/>
+                </p:selectOneMenu>
+
+                <h:outputLabel value="Discount:"/>
+                <p:inputText value="#{ticketBean.newTicket.discount}" required="true"/>
+
+                <h:outputLabel value="Number:"/>
+                <p:inputText value="#{ticketBean.newTicket.number}" required="true"/>
+
+                <h:outputLabel value="Person Passport ID (optional):"/>
+                <p:inputText value="#{ticketBean.newPersonPassportId}"/>
+
+                <h:outputLabel value="Person Eye Color:"/>
+                <p:selectOneMenu value="#{ticketBean.newPersonEyeColor}">
+                    <f:selectItem itemLabel="None" itemValue="#{null}" noSelectionOption="true"/>
+                    <f:selectItems value="#{ticketBean.colors}"/>
+                </p:selectOneMenu>
+
+                <h:outputLabel value="Person Hair Color:"/>
+                <p:selectOneMenu value="#{ticketBean.newPersonHairColor}">
+                    <f:selectItem itemLabel="None" itemValue="#{null}" noSelectionOption="true"/>
+                    <f:selectItems value="#{ticketBean.colors}"/>
+                </p:selectOneMenu>
+
+                <h:outputLabel value="Person Weight:"/>
+                <p:inputText value="#{ticketBean.newPersonWeight}"/>
+
+                <h:outputLabel value="Person Nationality:"/>
+                <p:selectOneMenu value="#{ticketBean.newPersonNationality}">
+                    <f:selectItem itemLabel="None" itemValue="#{null}" noSelectionOption="true"/>
+                    <f:selectItems value="#{ticketBean.countries}"/>
+                </p:selectOneMenu>
+
+                <h:outputLabel value="Person Location X:"/>
+                <p:inputText value="#{ticketBean.newPersonLocationX}"/>
+
+                <h:outputLabel value="Person Location Y:"/>
+                <p:inputText value="#{ticketBean.newPersonLocationY}"/>
+
+                <h:outputLabel value="Person Location Name:"/>
+                <p:inputText value="#{ticketBean.newPersonLocationName}"/>
+            </p:panelGrid>
+
+            <p:commandButton value="Create" action="#{ticketBean.createTicket()}"
+                             update=":ticketsForm" oncomplete="if (args &amp;&amp; !args.validationFailed) PF('createDialog').hide();"/>
+        </h:form>
+    </p:dialog>
+
+    <p:dialog header="Edit Ticket" widgetVar="editDialog" modal="true" width="600" height="600" contentStyle="overflow-y: auto;">
+        <h:form id="editForm">
+            <p:panelGrid columns="2" rendered="#{ticketBean.selectedTicket != null}">
+                <h:outputLabel value="Name:"/>
+                <p:inputText value="#{ticketBean.selectedTicket.name}" required="true"/>
+
+                <h:outputLabel value="Coordinates X:"/>
+                <p:inputText value="#{ticketBean.selectedTicket.coordinates.x}" required="true"/>
+
+                <h:outputLabel value="Coordinates Y:"/>
+                <p:inputText value="#{ticketBean.selectedTicket.coordinates.y}" required="true"/>
+
+                <h:outputLabel value="Event:"/>
+                <p:selectOneMenu value="#{ticketBean.editEventId}" required="true">
+                    <f:selectItem itemLabel="Select Event" itemValue="#{null}" noSelectionOption="true"/>
+                    <f:selectItems value="#{ticketBean.events}" var="event"
+                                   itemLabel="#{event.name}" itemValue="#{event.id}"/>
+                </p:selectOneMenu>
+
+                <h:outputLabel value="Venue:"/>
+                <p:selectOneMenu value="#{ticketBean.editVenueId}" required="true">
+                    <f:selectItem itemLabel="Select Venue" itemValue="#{null}" noSelectionOption="true"/>
+                    <f:selectItems value="#{ticketBean.venues}" var="venue"
+                                   itemLabel="#{venue.name}" itemValue="#{venue.id}"/>
+                </p:selectOneMenu>
+
+                <h:outputLabel value="Price:"/>
+                <p:inputText value="#{ticketBean.selectedTicket.price}" required="true"/>
+
+                <h:outputLabel value="Type:"/>
+                <p:selectOneMenu value="#{ticketBean.selectedTicket.type}" required="true">
+                    <f:selectItems value="#{ticketBean.ticketTypes}"/>
+                </p:selectOneMenu>
+
+                <h:outputLabel value="Discount:"/>
+                <p:inputText value="#{ticketBean.selectedTicket.discount}" required="true"/>
+
+                <h:outputLabel value="Number:"/>
+                <p:inputText value="#{ticketBean.selectedTicket.number}" required="true"/>
+
+                <h:outputLabel value="Person Passport ID (optional):"/>
+                <p:inputText value="#{ticketBean.editPersonPassportId}"/>
+
+                <h:outputLabel value="Person Eye Color:"/>
+                <p:selectOneMenu value="#{ticketBean.editPersonEyeColor}">
+                    <f:selectItem itemLabel="None" itemValue="#{null}" noSelectionOption="true"/>
+                    <f:selectItems value="#{ticketBean.colors}"/>
+                </p:selectOneMenu>
+
+                <h:outputLabel value="Person Hair Color:"/>
+                <p:selectOneMenu value="#{ticketBean.editPersonHairColor}">
+                    <f:selectItem itemLabel="None" itemValue="#{null}" noSelectionOption="true"/>
+                    <f:selectItems value="#{ticketBean.colors}"/>
+                </p:selectOneMenu>
+
+                <h:outputLabel value="Person Weight:"/>
+                <p:inputText value="#{ticketBean.editPersonWeight}"/>
+
+                <h:outputLabel value="Person Nationality:"/>
+                <p:selectOneMenu value="#{ticketBean.editPersonNationality}">
+                    <f:selectItem itemLabel="None" itemValue="#{null}" noSelectionOption="true"/>
+                    <f:selectItems value="#{ticketBean.countries}"/>
+                </p:selectOneMenu>
+
+                <h:outputLabel value="Person Location X:"/>
+                <p:inputText value="#{ticketBean.editPersonLocationX}"/>
+
+                <h:outputLabel value="Person Location Y:"/>
+                <p:inputText value="#{ticketBean.editPersonLocationY}"/>
+
+                <h:outputLabel value="Person Location Name:"/>
+                <p:inputText value="#{ticketBean.editPersonLocationName}"/>
+            </p:panelGrid>
+
+            <p:commandButton value="Update" action="#{ticketBean.updateTicket()}"
+                             update=":ticketsForm" oncomplete="if (args &amp;&amp; !args.validationFailed) PF('editDialog').hide();"/>
+        </h:form>
+    </p:dialog>
+</h:body>
+</html>

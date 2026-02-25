@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2"
+             xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+             http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+    <persistence-unit name="TicketPU" transaction-type="RESOURCE_LOCAL">
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+        <class>ru.itmo.is.entity.Ticket</class>
+        <class>ru.itmo.is.entity.Event</class>
+        <class>ru.itmo.is.entity.Venue</class>
+        <class>ru.itmo.is.entity.User</class>
+        <class>ru.itmo.is.entity.ImportHistory</class>
+        <properties>
+            <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://pg:5432/studs"/>
+            <property name="javax.persistence.jdbc.user" value="s335104"/>
+            <property name="javax.persistence.jdbc.password" value="37RRdJ7yK6eVfq5J"/>
+            <property name="eclipselink.ddl-generation" value="create-or-extend-tables"/>
+            <property name="eclipselink.logging.level" value="FINE"/>
+        </properties>
+    </persistence-unit>
+</persistence>

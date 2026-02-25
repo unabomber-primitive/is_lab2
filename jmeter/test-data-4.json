@@ -1,0 +1,24 @@
+[
+  {
+    "name": "Import Test Ticket 4-1",
+    "coordinates": {"x": 10.5, "y": 20.5},
+    "eventId": 1,
+    "venueId": 1,
+    "price": 1100.0,
+    "type": "USUAL",
+    "discount": 11,
+    "number": 204001
+  }
+,
+  {
+    "name": "Import Test Ticket 4-2",
+    "coordinates": {"x": 11, "y": 21},
+    "eventId": 1,
+    "venueId": 1,
+    "price": 1200.0,
+    "type": "BUDGETARY",
+    "discount": 12,
+    "number": 204002
+  }
+
+]

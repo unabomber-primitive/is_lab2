@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+<h:head>
+    <title>Special Operations</title>
+</h:head>
+<h:body>
+    <h:form>
+        <p:menubar>
+            <p:menuitem value="Home" outcome="index" />
+            <p:menuitem value="Tickets" outcome="tickets" />
+            <p:menuitem value="Events" outcome="events" />
+            <p:menuitem value="Venues" outcome="venues" />
+            <p:menuitem value="Import" outcome="import" />
+            <p:menuitem value="Import History" outcome="import-history" />
+            <p:menuitem value="Logout" action="#{authBean.logout()}" />
+        </p:menubar>
+    </h:form>
+
+    <h1>Special Operations</h1>
+
+    <h:form id="specialForm">
+        <p:messages/>
+
+        <p:poll interval="5" listener="#{specialOpsBean.reload}" update="specialForm"/>
+
+        <p:panel header="Delete tickets by venue">
+            <p:panelGrid columns="2">
+                <h:outputLabel value="Venue:"/>
+                <p:selectOneMenu value="#{specialOpsBean.selectedVenueId}">
+                    <f:selectItems value="#{specialOpsBean.venues}" var="venue"
+                                   itemLabel="#{venue.name}" itemValue="#{venue.id}"/>
+                </p:selectOneMenu>
+            </p:panelGrid>
+            <p:commandButton value="Delete" action="#{specialOpsBean.deleteByVenue()}" update="specialForm"/>
+        </p:panel>
+
+        <p:panel header="Find ticket with minimum number" style="margin-top: 20px;">
+            <p:commandButton value="Find" action="#{specialOpsBean.findMinNumber()}" update="specialForm"/>
+            <p:dataTable value="#{specialOpsBean.minNumberTicketList}"
+                         var="ticket" style="margin-top: 10px;">
+                <p:column headerText="ID">
+                    <h:outputText value="#{ticket.id}"/>
+                </p:column>
+                <p:column headerText="Name">
+                    <h:outputText value="#{ticket.name}"/>
+                </p:column>
+                <p:column headerText="Number">
+                    <h:outputText value="#{ticket.number}"/>
+                </p:column>
+            </p:dataTable>
+        </p:panel>
+
+        <p:panel header="Find ticket with maximum discount" style="margin-top: 20px;">
+            <p:commandButton value="Find" action="#{specialOpsBean.findMaxDiscount()}" update="specialForm"/>
+            <p:dataTable value="#{specialOpsBean.maxDiscountTicketList}"
+                         var="ticket" style="margin-top: 10px;">
+                <p:column headerText="ID">
+                    <h:outputText value="#{ticket.id}"/>
+                </p:column>
+                <p:column headerText="Name">
+                    <h:outputText value="#{ticket.name}"/>
+                </p:column>
+                <p:column headerText="Discount">
+                    <h:outputText value="#{ticket.discount}"/>
+                </p:column>
+            </p:dataTable>
+        </p:panel>
+
+        <p:panel header="Sell ticket" style="margin-top: 20px;">
+            <p:panelGrid columns="2">
+                <h:outputLabel value="Ticket ID:"/>
+                <p:inputText value="#{specialOpsBean.sellTicketId}"/>
+
+                <h:outputLabel value="Price:"/>
+                <p:inputText value="#{specialOpsBean.sellPrice}"/>
+
+                <h:outputLabel value="Passport ID:"/>
+                <p:inputText value="#{specialOpsBean.sellPerson.passportID}"/>
+
+                <h:outputLabel value="Hair Color:"/>
+                <p:selectOneMenu value="#{specialOpsBean.sellPerson.hairColor}">
+                    <f:selectItems value="#{specialOpsBean.colors}"/>
+                </p:selectOneMenu>
+
+                <h:outputLabel value="Nationality:"/>
+                <p:selectOneMenu value="#{specialOpsBean.sellPerson.nationality}">
+                    <f:selectItems value="#{specialOpsBean.countries}"/>
+                </p:selectOneMenu>
+
+                <h:outputLabel value="Weight:"/>
+                <p:inputText value="#{specialOpsBean.sellPerson.weight}"/>
+
+                <h:outputLabel value="Location X:"/>
+                <p:inputText value="#{specialOpsBean.sellPerson.location.x}"/>
+
+                <h:outputLabel value="Location Y:"/>
+                <p:inputText value="#{specialOpsBean.sellPerson.location.y}"/>
+            </p:panelGrid>
+            <p:commandButton value="Sell" action="#{specialOpsBean.sellTicket()}" update="specialForm"/>
+        </p:panel>
+
+        <p:panel header="Cancel bookings by passport" style="margin-top: 20px;">
+            <p:panelGrid columns="2">
+                <h:outputLabel value="Passport ID:"/>
+                <p:inputText value="#{specialOpsBean.cancelPassportId}"/>
+            </p:panelGrid>
+            <p:commandButton value="Cancel" action="#{specialOpsBean.cancelBookings()}" update="specialForm"/>
+        </p:panel>
+    </h:form>
+</h:body>
+</html>

@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Test Ticket 1",
+    "coordinates": {"x": 10.5, "y": 20.0},
+    "person": {
+      "passportID": "TEST1234567890",
+      "hairColor": "BLACK",
+      "eyeColor": "GREEN",
+      "weight": 75.5,
+      "nationality": "USA",
+      "location": {"x": 1.0, "y": 2, "name": "Test City"}
+    },
+    "eventId": 1,
+    "venueId": 1,
+    "price": 1000.0,
+    "type": "VIP",
+    "discount": 10,
+    "number": 99999
+  }
+]

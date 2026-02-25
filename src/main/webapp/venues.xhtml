@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+<h:head>
+    <title>Venues</title>
+</h:head>
+<h:body>
+    <h:form>
+        <p:menubar>
+            <p:menuitem value="Home" outcome="index" />
+            <p:menuitem value="Tickets" outcome="tickets" />
+            <p:menuitem value="Events" outcome="events" />
+            <p:menuitem value="Special Operations" outcome="special" />
+            <p:menuitem value="Import" outcome="import" />
+            <p:menuitem value="Import History" outcome="import-history" />
+            <p:menuitem value="Logout" action="#{authBean.logout()}" />
+        </p:menubar>
+    </h:form>
+
+    <h1>Venues</h1>
+
+    <h:form id="venuesForm">
+        <p:messages/>
+
+        <p:poll interval="5" listener="#{venueBean.loadVenues}" update="venuesForm"/>
+
+        <p:commandButton value="Create New Venue" onclick="PF('createVenueDialog').show();" type="button"/>
+
+        <p:dataTable value="#{venueBean.venues}" var="venue" style="margin-top: 20px;"
+                     filteredValue="#{venueBean.filteredVenues}">
+            <p:column headerText="ID" sortBy="#{venue.id}">
+                <h:outputText value="#{venue.id}"/>
+            </p:column>
+            <p:column headerText="Name" sortBy="#{venue.name}" filterBy="#{venue.name}" filterMatchMode="exact">
+                <h:outputText value="#{venue.name}"/>
+            </p:column>
+            <p:column headerText="Capacity" sortBy="#{venue.capacity}">
+                <h:outputText value="#{venue.capacity}"/>
+            </p:column>
+            <p:column headerText="Type" sortBy="#{venue.type}">
+                <h:outputText value="#{venue.type}"/>
+            </p:column>
+            <p:column headerText="Zip Code" filterBy="#{venue.address.zipCode}" filterMatchMode="exact">
+                <h:outputText value="#{venue.address != null ? venue.address.zipCode : '-'}"/>
+            </p:column>
+            <p:column headerText="Actions">
+                <p:commandButton value="Edit" action="#{venueBean.setSelectedVenue(venue)}"
+                                 onclick="PF('editVenueDialog').show();" update=":editVenueForm"/>
+                <p:commandButton value="Delete" action="#{venueBean.deleteVenue(venue.id)}"
+                                 update="venuesForm"/>
+            </p:column>
+        </p:dataTable>
+    </h:form>
+
+    <p:dialog header="Create Venue" widgetVar="createVenueDialog" modal="true">
+        <h:form>
+            <p:panelGrid columns="2">
+                <h:outputLabel value="Name:"/>
+                <p:inputText value="#{venueBean.newVenue.name}"/>
+
+                <h:outputLabel value="Capacity:"/>
+                <p:inputText value="#{venueBean.newVenue.capacity}"/>
+
+                <h:outputLabel value="Type:"/>
+                <p:selectOneMenu value="#{venueBean.newVenue.type}">
+                    <f:selectItems value="#{venueBean.venueTypes}"/>
+                </p:selectOneMenu>
+
+                <h:outputLabel value="Zip Code:"/>
+                <p:inputText value="#{venueBean.newVenue.address.zipCode}"/>
+            </p:panelGrid>
+
+            <p:commandButton value="Create" action="#{venueBean.createVenue()}"
+                             update=":venuesForm" oncomplete="PF('createVenueDialog').hide();"/>
+        </h:form>
+    </p:dialog>
+
+    <p:dialog header="Edit Venue" widgetVar="editVenueDialog" modal="true">
+        <h:form id="editVenueForm">
+            <p:panelGrid columns="2" rendered="#{venueBean.selectedVenue != null}">
+                <h:outputLabel value="Name:"/>
+                <p:inputText value="#{venueBean.selectedVenue.name}"/>
+
+                <h:outputLabel value="Capacity:"/>
+                <p:inputText value="#{venueBean.selectedVenue.capacity}"/>
+
+                <h:outputLabel value="Type:"/>
+                <p:selectOneMenu value="#{venueBean.selectedVenue.type}">
+                    <f:selectItems value="#{venueBean.venueTypes}"/>
+                </p:selectOneMenu>
+
+                <h:outputLabel value="Zip Code:"/>
+                <p:inputText value="#{venueBean.selectedVenue.address.zipCode}"/>
+            </p:panelGrid>
+
+            <p:commandButton value="Update" action="#{venueBean.updateVenue()}"
+                             update=":venuesForm" oncomplete="if (args &amp;&amp; !args.validationFailed) PF('editVenueDialog').hide();"/>
+        </h:form>
+    </p:dialog>
+</h:body>
+</html>

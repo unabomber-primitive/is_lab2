@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+<h:head>
+    <title>Import Tickets</title>
+</h:head>
+<h:body>
+    <h:form>
+        <p:menubar>
+            <p:menuitem value="Home" outcome="index" />
+            <p:menuitem value="Tickets" outcome="tickets" />
+            <p:menuitem value="Events" outcome="events" />
+            <p:menuitem value="Venues" outcome="venues" />
+            <p:menuitem value="Special Operations" outcome="special" />
+            <p:menuitem value="Import History" outcome="import-history" />
+            <p:menuitem value="Logout" action="#{authBean.logout()}" />
+        </p:menubar>
+    </h:form>
+
+    <h1>Import Tickets from JSON</h1>
+
+    <h:form enctype="multipart/form-data">
+        <p:messages/>
+
+        <p:fileUpload value="#{importBean.file}" mode="simple" skinSimple="true"
+                      accept=".json" label="Choose File"/>
+
+        <p:commandButton value="Upload" action="#{importBean.upload()}" ajax="false"/>
+    </h:form>
+
+    <h3>JSON Format Example:</h3>
+    <pre>
+[
+  {
+    "name": "VIP Ticket",
+    "coordinates": {"x": 10.5, "y": 20.0},
+    "person": {
+      "passportID": "1234567890",
+      "hairColor": "BLACK",
+      "eyeColor": "GREEN",
+      "weight": 75.5,
+      "nationality": "USA",
+      "location": {"x": 1.0, "y": 2, "name": "City"}
+    },
+    "eventId": 1,
+    "venueId": 1,
+    "price": 1000.0,
+    "type": "VIP",
+    "discount": 10,
+    "number": 12345
+  }
+]
+    </pre>
+</h:body>
+</html>

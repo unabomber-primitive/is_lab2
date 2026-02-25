@@ -1,0 +1,394 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1771085495551,54,Setup - Load Login Page,200,OK,Setup - Create Test Data 1-1,text,true,,4129,187,1,1,http://localhost:17800/ticket-system/login.xhtml,54,0,4
+1771085495606,20,Setup - Admin Login,200,OK,Setup - Create Test Data 1-1,text,true,,3565,433,1,1,http://localhost:17800/ticket-system/login.xhtml,20,0,0
+1771085495627,57,Setup - Load Events Page,200,OK,Setup - Create Test Data 1-1,text,true,,3718,501,1,1,http://localhost:17800/ticket-system/login.xhtml,20,0,0
+1771085495627,20,Setup - Load Events Page-0,302,Found,Setup - Create Test Data 1-1,,true,,157,251,1,1,http://localhost:17800/ticket-system/events.xhtml,20,0,0
+1771085495648,36,Setup - Load Events Page-1,200,OK,Setup - Create Test Data 1-1,text,true,,3561,250,1,1,http://localhost:17800/ticket-system/login.xhtml,36,0,0
+1771085495684,83,Setup - Load Venues Page,200,OK,Setup - Create Test Data 1-1,text,true,,3715,501,1,1,http://localhost:17800/ticket-system/login.xhtml,41,0,1
+1771085495684,41,Setup - Load Venues Page-0,302,Found,Setup - Create Test Data 1-1,,true,,157,251,1,1,http://localhost:17800/ticket-system/venues.xhtml,41,0,1
+1771085495726,41,Setup - Load Venues Page-1,200,OK,Setup - Create Test Data 1-1,text,true,,3558,250,1,1,http://localhost:17800/ticket-system/login.xhtml,41,0,0
+1771085495828,59,Login User 3,200,OK,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-3,text,true,,4125,182,10,24,http://localhost:17800/ticket-system/login.xhtml,59,0,1
+1771085495829,58,Login User 5,200,OK,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-5,text,true,,4125,182,10,24,http://localhost:17800/ticket-system/login.xhtml,58,0,0
+1771085495828,59,Login User 2,200,OK,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-2,text,true,,4125,182,10,24,http://localhost:17800/ticket-system/login.xhtml,59,0,1
+1771085495832,55,Login User 9,200,OK,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-9,text,true,,4126,182,10,24,http://localhost:17800/ticket-system/login.xhtml,55,0,0
+1771085495831,56,Login User 7,200,OK,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-7,text,true,,4125,182,10,24,http://localhost:17800/ticket-system/login.xhtml,56,0,0
+1771085495830,57,Login User 6,200,OK,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-6,text,true,,4124,182,10,24,http://localhost:17800/ticket-system/login.xhtml,57,0,0
+1771085495832,75,Login User 8,200,OK,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-8,text,true,,4125,182,10,24,http://localhost:17800/ticket-system/login.xhtml,75,0,0
+1771085495834,73,Login,200,OK,Test 2 - Concurrent Update Same Ticket 2-3,text,true,,4125,182,5,24,http://localhost:17800/ticket-system/login.xhtml,73,0,0
+1771085495828,79,Login User 1,200,OK,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-1,text,true,,4125,182,10,24,http://localhost:17800/ticket-system/login.xhtml,79,0,1
+1771085495835,72,Login,200,OK,Test 2 - Concurrent Update Same Ticket 2-4,text,true,,4124,182,5,24,http://localhost:17800/ticket-system/login.xhtml,72,0,0
+1771085495833,74,Login,200,OK,Test 2 - Concurrent Update Same Ticket 2-1,text,true,,4123,182,5,24,http://localhost:17800/ticket-system/login.xhtml,74,0,1
+1771085495835,72,Login,200,OK,Test 2 - Concurrent Update Same Ticket 2-5,text,true,,4124,182,5,24,http://localhost:17800/ticket-system/login.xhtml,72,0,0
+1771085495828,79,Login User 4,200,OK,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-4,text,true,,4124,182,10,24,http://localhost:17800/ticket-system/login.xhtml,79,0,1
+1771085495836,109,Login,200,OK,Test 3 - Concurrent Delete Same Ticket 3-1,text,true,,4126,182,3,25,http://localhost:17800/ticket-system/login.xhtml,109,0,1
+1771085495836,109,Login,200,OK,Test 3 - Concurrent Delete Same Ticket 3-2,text,true,,4126,182,3,25,http://localhost:17800/ticket-system/login.xhtml,109,0,1
+1771085495834,111,Login,200,OK,Test 2 - Concurrent Update Same Ticket 2-2,text,true,,4125,182,5,25,http://localhost:17800/ticket-system/login.xhtml,111,0,1
+1771085495832,113,Login User 10,200,OK,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-10,text,true,,4124,182,10,25,http://localhost:17800/ticket-system/login.xhtml,113,0,0
+1771085495839,106,Login,200,OK,Test 4 - Concurrent Import Operations 4-2,text,true,,4126,182,5,25,http://localhost:17800/ticket-system/login.xhtml,106,0,0
+1771085495840,105,Login,200,OK,Test 4 - Concurrent Import Operations 4-4,text,true,,4124,182,5,25,http://localhost:17800/ticket-system/login.xhtml,105,0,1
+1771085495837,108,Login,200,OK,Test 3 - Concurrent Delete Same Ticket 3-3,text,true,,4126,182,3,25,http://localhost:17800/ticket-system/login.xhtml,108,0,1
+1771085495839,106,Login,200,OK,Test 4 - Concurrent Import Operations 4-1,text,true,,4125,182,5,25,http://localhost:17800/ticket-system/login.xhtml,106,0,1
+1771085495839,123,Login,200,OK,Test 4 - Concurrent Import Operations 4-3,text,true,,4123,182,5,25,http://localhost:17800/ticket-system/login.xhtml,123,0,0
+1771085495840,123,Login,200,OK,Test 4 - Concurrent Import Operations 4-5,text,true,,4125,182,5,25,http://localhost:17800/ticket-system/login.xhtml,123,0,0
+1771085495843,120,Login,200,OK,Test 5 - Mixed Concurrent Operations 5-1,text,true,,4125,182,2,25,http://localhost:17800/ticket-system/login.xhtml,120,0,0
+1771085495887,100,Submit Login,200,OK,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-5,text,true,,3559,429,10,25,http://localhost:17800/ticket-system/login.xhtml,100,0,1
+1771085495888,99,Submit Login,200,OK,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-6,text,true,,3560,428,10,25,http://localhost:17800/ticket-system/login.xhtml,99,0,0
+1771085495887,100,Submit Login,200,OK,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-3,text,true,,3559,429,10,25,http://localhost:17800/ticket-system/login.xhtml,100,0,1
+1771085495887,100,Submit Login,200,OK,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-2,text,true,,3560,429,10,25,http://localhost:17800/ticket-system/login.xhtml,100,0,1
+1771085495908,80,Submit Login,200,OK,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-8,text,true,,3559,429,10,25,http://localhost:17800/ticket-system/login.xhtml,80,0,1
+1771085495908,80,Submit Login,200,OK,Test 2 - Concurrent Update Same Ticket 2-1,text,true,,3558,427,5,25,http://localhost:17800/ticket-system/login.xhtml,80,0,1
+1771085495908,80,Submit Login,200,OK,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-1,text,true,,3559,429,10,25,http://localhost:17800/ticket-system/login.xhtml,80,0,1
+1771085495887,101,Submit Login,200,OK,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-9,text,true,,3556,430,10,25,http://localhost:17800/ticket-system/login.xhtml,101,0,1
+1771085495887,101,Submit Login,200,OK,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-7,text,true,,3561,429,10,25,http://localhost:17800/ticket-system/login.xhtml,101,0,1
+1771085495908,97,Submit Login,200,OK,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-4,text,true,,3559,428,10,25,http://localhost:17800/ticket-system/login.xhtml,97,0,1
+1771085495908,97,Submit Login,200,OK,Test 2 - Concurrent Update Same Ticket 2-3,text,true,,3559,429,5,25,http://localhost:17800/ticket-system/login.xhtml,97,0,1
+1771085495908,97,Submit Login,200,OK,Test 2 - Concurrent Update Same Ticket 2-4,text,true,,3559,428,5,25,http://localhost:17800/ticket-system/login.xhtml,97,0,1
+1771085495946,59,Submit Login,200,OK,Test 3 - Concurrent Delete Same Ticket 3-1,text,true,,3560,430,3,25,http://localhost:17800/ticket-system/login.xhtml,59,0,0
+1771085495946,60,Submit Login,200,OK,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-10,text,true,,3560,428,10,25,http://localhost:17800/ticket-system/login.xhtml,60,0,0
+1771085495908,98,Submit Login,200,OK,Test 2 - Concurrent Update Same Ticket 2-5,text,true,,3560,428,5,25,http://localhost:17800/ticket-system/login.xhtml,98,0,1
+1771085495946,60,Submit Login,200,OK,Test 4 - Concurrent Import Operations 4-4,text,true,,3559,428,5,25,http://localhost:17800/ticket-system/login.xhtml,60,0,0
+1771085495943,63,Login,200,OK,Test 5 - Mixed Concurrent Operations 5-2,text,true,,4126,182,2,25,http://localhost:17800/ticket-system/login.xhtml,63,0,0
+1771085495946,61,Submit Login,200,OK,Test 2 - Concurrent Update Same Ticket 2-2,text,true,,3561,429,5,25,http://localhost:17800/ticket-system/login.xhtml,60,0,0
+1771085495946,77,Submit Login,200,OK,Test 3 - Concurrent Delete Same Ticket 3-3,text,true,,3561,430,3,25,http://localhost:17800/ticket-system/login.xhtml,77,0,0
+1771085495946,78,Submit Login,200,OK,Test 3 - Concurrent Delete Same Ticket 3-2,text,true,,3561,430,3,25,http://localhost:17800/ticket-system/login.xhtml,77,0,0
+1771085495946,77,Submit Login,200,OK,Test 4 - Concurrent Import Operations 4-1,text,true,,3559,429,5,25,http://localhost:17800/ticket-system/login.xhtml,77,0,0
+1771085495962,61,Submit Login,200,OK,Test 4 - Concurrent Import Operations 4-3,text,true,,3558,427,5,25,http://localhost:17800/ticket-system/login.xhtml,61,0,1
+1771085495946,77,Submit Login,200,OK,Test 4 - Concurrent Import Operations 4-2,text,true,,3560,430,5,25,http://localhost:17800/ticket-system/login.xhtml,77,0,0
+1771085495964,69,Submit Login,200,OK,Test 4 - Concurrent Import Operations 4-5,text,true,,3560,429,5,25,http://localhost:17800/ticket-system/login.xhtml,69,0,0
+1771085495964,69,Submit Login,200,OK,Test 5 - Mixed Concurrent Operations 5-1,text,true,,3560,429,2,25,http://localhost:17800/ticket-system/login.xhtml,69,0,0
+1771085496006,50,Submit Login,200,OK,Test 5 - Mixed Concurrent Operations 5-2,text,true,,3560,430,3,26,http://localhost:17800/ticket-system/login.xhtml,50,0,1
+1771085496042,47,Login,200,OK,Test 5 - Mixed Concurrent Operations 5-3,text,true,,4124,182,3,26,http://localhost:17800/ticket-system/login.xhtml,47,0,0
+1771085495989,107,Load Tickets Page,200,OK,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-7,text,true,,3717,502,10,26,http://localhost:17800/ticket-system/login.xhtml,62,0,0
+1771085495989,62,Load Tickets Page-0,302,Found,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-7,,true,,157,252,10,26,http://localhost:17800/ticket-system/tickets.xhtml,62,0,0
+1771085496051,45,Load Tickets Page-1,200,OK,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-7,text,true,,3560,250,10,26,http://localhost:17800/ticket-system/login.xhtml,45,0,0
+1771085495989,107,Load Tickets Page,200,OK,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-8,text,true,,3716,502,10,26,http://localhost:17800/ticket-system/login.xhtml,62,0,0
+1771085495989,62,Load Tickets Page-0,302,Found,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-8,,true,,157,252,10,26,http://localhost:17800/ticket-system/tickets.xhtml,62,0,0
+1771085496051,45,Load Tickets Page-1,200,OK,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-8,text,true,,3559,250,10,26,http://localhost:17800/ticket-system/login.xhtml,45,0,0
+1771085495987,109,Load Tickets Page,200,OK,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-2,text,true,,3717,502,10,26,http://localhost:17800/ticket-system/login.xhtml,59,0,0
+1771085495987,59,Load Tickets Page-0,302,Found,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-2,,true,,157,252,10,26,http://localhost:17800/ticket-system/tickets.xhtml,59,0,0
+1771085496046,50,Load Tickets Page-1,200,OK,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-2,text,true,,3560,250,10,26,http://localhost:17800/ticket-system/login.xhtml,50,0,0
+1771085496006,94,Load Import Page,200,OK,Test 4 - Concurrent Import Operations 4-4,text,true,,3718,501,5,26,http://localhost:17800/ticket-system/login.xhtml,47,0,1
+1771085496006,47,Load Import Page-0,302,Found,Test 4 - Concurrent Import Operations 4-4,,true,,157,251,5,26,http://localhost:17800/ticket-system/import.xhtml,47,0,1
+1771085496053,47,Load Import Page-1,200,OK,Test 4 - Concurrent Import Operations 4-4,text,true,,3561,250,5,26,http://localhost:17800/ticket-system/login.xhtml,47,0,0
+1771085495989,111,Load Tickets Page,200,OK,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-1,text,true,,3718,502,10,26,http://localhost:17800/ticket-system/login.xhtml,62,0,0
+1771085495989,62,Load Tickets Page-0,302,Found,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-1,,true,,157,252,10,26,http://localhost:17800/ticket-system/tickets.xhtml,62,0,0
+1771085496051,49,Load Tickets Page-1,200,OK,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-1,text,true,,3561,250,10,26,http://localhost:17800/ticket-system/login.xhtml,49,0,0
+1771085496006,95,Load Tickets Page,200,OK,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-10,text,true,,3717,502,10,26,http://localhost:17800/ticket-system/login.xhtml,47,0,1
+1771085496006,47,Load Tickets Page-0,302,Found,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-10,,true,,157,252,10,26,http://localhost:17800/ticket-system/tickets.xhtml,47,0,1
+1771085496053,48,Load Tickets Page-1,200,OK,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-10,text,true,,3560,250,10,26,http://localhost:17800/ticket-system/login.xhtml,48,0,0
+1771085495987,115,Load Tickets Page,200,OK,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-6,text,true,,3714,502,10,26,http://localhost:17800/ticket-system/login.xhtml,59,0,0
+1771085496005,97,Load Tickets Page,200,OK,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-4,text,true,,3716,502,10,26,http://localhost:17800/ticket-system/login.xhtml,47,0,0
+1771085495987,59,Load Tickets Page-0,302,Found,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-6,,true,,157,252,10,26,http://localhost:17800/ticket-system/tickets.xhtml,59,0,0
+1771085496005,47,Load Tickets Page-0,302,Found,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-4,,true,,157,252,10,26,http://localhost:17800/ticket-system/tickets.xhtml,47,0,0
+1771085496046,56,Load Tickets Page-1,200,OK,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-6,text,true,,3557,250,10,26,http://localhost:17800/ticket-system/login.xhtml,56,0,0
+1771085496052,50,Load Tickets Page-1,200,OK,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-4,text,true,,3559,250,10,26,http://localhost:17800/ticket-system/login.xhtml,50,0,1
+1771085496005,101,Load Tickets Page,200,OK,Test 3 - Concurrent Delete Same Ticket 3-1,text,true,,3716,502,3,26,http://localhost:17800/ticket-system/login.xhtml,47,0,0
+1771085496005,47,Load Tickets Page-0,302,Found,Test 3 - Concurrent Delete Same Ticket 3-1,,true,,157,252,3,26,http://localhost:17800/ticket-system/tickets.xhtml,47,0,0
+1771085496052,54,Load Tickets Page-1,200,OK,Test 3 - Concurrent Delete Same Ticket 3-1,text,true,,3559,250,3,26,http://localhost:17800/ticket-system/login.xhtml,54,0,1
+1771085495987,130,Load Tickets Page,200,OK,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-5,text,true,,3717,502,10,26,http://localhost:17800/ticket-system/login.xhtml,59,0,0
+1771085495987,59,Load Tickets Page-0,302,Found,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-5,,true,,157,252,10,26,http://localhost:17800/ticket-system/tickets.xhtml,59,0,0
+1771085496046,71,Load Tickets Page-1,200,OK,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-5,text,true,,3560,250,10,26,http://localhost:17800/ticket-system/login.xhtml,71,0,1
+1771085496005,112,Load Tickets Page,200,OK,Test 2 - Concurrent Update Same Ticket 2-4,text,true,,3717,502,5,26,http://localhost:17800/ticket-system/login.xhtml,47,0,0
+1771085496005,47,Load Tickets Page-0,302,Found,Test 2 - Concurrent Update Same Ticket 2-4,,true,,157,252,5,26,http://localhost:17800/ticket-system/tickets.xhtml,47,0,0
+1771085496052,65,Load Tickets Page-1,200,OK,Test 2 - Concurrent Update Same Ticket 2-4,text,true,,3560,250,5,26,http://localhost:17800/ticket-system/login.xhtml,65,0,1
+1771085496005,112,Load Tickets Page,200,OK,Test 2 - Concurrent Update Same Ticket 2-3,text,true,,3716,502,5,26,http://localhost:17800/ticket-system/login.xhtml,47,0,0
+1771085496005,47,Load Tickets Page-0,302,Found,Test 2 - Concurrent Update Same Ticket 2-3,,true,,157,252,5,26,http://localhost:17800/ticket-system/tickets.xhtml,47,0,0
+1771085496052,65,Load Tickets Page-1,200,OK,Test 2 - Concurrent Update Same Ticket 2-3,text,true,,3559,250,5,26,http://localhost:17800/ticket-system/login.xhtml,65,0,1
+1771085496006,111,Load Tickets Page,200,OK,Test 2 - Concurrent Update Same Ticket 2-5,text,true,,3715,502,5,26,http://localhost:17800/ticket-system/login.xhtml,47,0,1
+1771085496006,47,Load Tickets Page-0,302,Found,Test 2 - Concurrent Update Same Ticket 2-5,,true,,157,252,5,26,http://localhost:17800/ticket-system/tickets.xhtml,47,0,1
+1771085496053,64,Load Tickets Page-1,200,OK,Test 2 - Concurrent Update Same Ticket 2-5,text,true,,3558,250,5,26,http://localhost:17800/ticket-system/login.xhtml,64,0,0
+1771085496024,101,Load Import Page,200,OK,Test 4 - Concurrent Import Operations 4-3,text,true,,3718,501,5,26,http://localhost:17800/ticket-system/login.xhtml,48,0,0
+1771085495987,138,Load Tickets Page,200,OK,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-3,text,true,,3718,502,10,26,http://localhost:17800/ticket-system/login.xhtml,59,0,1
+1771085495989,136,Load Tickets Page,200,OK,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-9,text,true,,3717,502,10,26,http://localhost:17800/ticket-system/login.xhtml,63,0,0
+1771085496024,48,Load Import Page-0,302,Found,Test 4 - Concurrent Import Operations 4-3,,true,,157,251,5,26,http://localhost:17800/ticket-system/import.xhtml,48,0,0
+1771085495987,59,Load Tickets Page-0,302,Found,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-3,,true,,157,252,10,26,http://localhost:17800/ticket-system/tickets.xhtml,59,0,1
+1771085495989,63,Load Tickets Page-0,302,Found,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-9,,true,,157,252,10,26,http://localhost:17800/ticket-system/tickets.xhtml,63,0,0
+1771085496072,53,Load Import Page-1,200,OK,Test 4 - Concurrent Import Operations 4-3,text,true,,3561,250,5,26,http://localhost:17800/ticket-system/login.xhtml,53,0,0
+1771085496046,79,Load Tickets Page-1,200,OK,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-3,text,true,,3561,250,10,26,http://localhost:17800/ticket-system/login.xhtml,79,0,0
+1771085496052,73,Load Tickets Page-1,200,OK,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-9,text,true,,3560,250,10,26,http://localhost:17800/ticket-system/login.xhtml,73,0,1
+1771085495989,136,Load Tickets Page,200,OK,Test 2 - Concurrent Update Same Ticket 2-1,text,true,,3717,502,5,26,http://localhost:17800/ticket-system/login.xhtml,62,0,0
+1771085496007,118,Load Tickets Page,200,OK,Test 2 - Concurrent Update Same Ticket 2-2,text,true,,3716,502,5,26,http://localhost:17800/ticket-system/login.xhtml,48,0,0
+1771085495989,62,Load Tickets Page-0,302,Found,Test 2 - Concurrent Update Same Ticket 2-1,,true,,157,252,5,26,http://localhost:17800/ticket-system/tickets.xhtml,62,0,0
+1771085496007,48,Load Tickets Page-0,302,Found,Test 2 - Concurrent Update Same Ticket 2-2,,true,,157,252,5,26,http://localhost:17800/ticket-system/tickets.xhtml,48,0,0
+1771085496051,74,Load Tickets Page-1,200,OK,Test 2 - Concurrent Update Same Ticket 2-1,text,true,,3560,250,5,26,http://localhost:17800/ticket-system/login.xhtml,74,0,0
+1771085496055,70,Load Tickets Page-1,200,OK,Test 2 - Concurrent Update Same Ticket 2-2,text,true,,3559,250,5,26,http://localhost:17800/ticket-system/login.xhtml,70,0,0
+1771085496024,103,Load Import Page,200,OK,Test 4 - Concurrent Import Operations 4-2,text,true,,3716,501,5,26,http://localhost:17800/ticket-system/login.xhtml,48,0,0
+1771085496024,48,Load Import Page-0,302,Found,Test 4 - Concurrent Import Operations 4-2,,true,,157,251,5,26,http://localhost:17800/ticket-system/import.xhtml,48,0,0
+1771085496072,55,Load Import Page-1,200,OK,Test 4 - Concurrent Import Operations 4-2,text,true,,3559,250,5,26,http://localhost:17800/ticket-system/login.xhtml,55,0,0
+1771085496024,111,Load Import Page,200,OK,Test 4 - Concurrent Import Operations 4-1,text,true,,3716,501,5,26,http://localhost:17800/ticket-system/login.xhtml,48,0,0
+1771085496024,48,Load Import Page-0,302,Found,Test 4 - Concurrent Import Operations 4-1,,true,,157,251,5,26,http://localhost:17800/ticket-system/import.xhtml,48,0,0
+1771085496072,63,Load Import Page-1,200,OK,Test 4 - Concurrent Import Operations 4-1,text,true,,3559,250,5,26,http://localhost:17800/ticket-system/login.xhtml,63,0,0
+1771085496024,111,Load Tickets Page,200,OK,Test 3 - Concurrent Delete Same Ticket 3-3,text,true,,3717,502,3,26,http://localhost:17800/ticket-system/login.xhtml,48,0,0
+1771085496024,111,Load Tickets Page,200,OK,Test 3 - Concurrent Delete Same Ticket 3-2,text,true,,3717,502,3,26,http://localhost:17800/ticket-system/login.xhtml,48,0,0
+1771085496024,48,Load Tickets Page-0,302,Found,Test 3 - Concurrent Delete Same Ticket 3-3,,true,,157,252,3,26,http://localhost:17800/ticket-system/tickets.xhtml,48,0,0
+1771085496024,48,Load Tickets Page-0,302,Found,Test 3 - Concurrent Delete Same Ticket 3-2,,true,,157,252,3,26,http://localhost:17800/ticket-system/tickets.xhtml,48,0,0
+1771085496072,63,Load Tickets Page-1,200,OK,Test 3 - Concurrent Delete Same Ticket 3-3,text,true,,3560,250,3,26,http://localhost:17800/ticket-system/login.xhtml,63,0,0
+1771085496072,63,Load Tickets Page-1,200,OK,Test 3 - Concurrent Delete Same Ticket 3-2,text,true,,3560,250,3,26,http://localhost:17800/ticket-system/login.xhtml,63,0,0
+1771085496033,129,Load Tickets for Update,200,OK,Test 5 - Mixed Concurrent Operations 5-1,text,true,,3717,502,4,27,http://localhost:17800/ticket-system/login.xhtml,41,0,0
+1771085496033,41,Load Tickets for Update-0,302,Found,Test 5 - Mixed Concurrent Operations 5-1,,true,,157,252,4,27,http://localhost:17800/ticket-system/tickets.xhtml,41,0,0
+1771085496075,87,Load Tickets for Update-1,200,OK,Test 5 - Mixed Concurrent Operations 5-1,text,true,,3560,250,4,27,http://localhost:17800/ticket-system/login.xhtml,87,0,0
+1771085496090,80,Submit Login,200,OK,Test 5 - Mixed Concurrent Operations 5-3,text,true,,3559,428,4,27,http://localhost:17800/ticket-system/login.xhtml,80,0,0
+1771085496033,137,Load Import Page,200,OK,Test 4 - Concurrent Import Operations 4-5,text,true,,3717,501,5,27,http://localhost:17800/ticket-system/login.xhtml,41,0,0
+1771085496033,41,Load Import Page-0,302,Found,Test 4 - Concurrent Import Operations 4-5,,true,,157,251,5,27,http://localhost:17800/ticket-system/import.xhtml,41,0,0
+1771085496075,95,Load Import Page-1,200,OK,Test 4 - Concurrent Import Operations 4-5,text,true,,3560,250,5,27,http://localhost:17800/ticket-system/login.xhtml,95,0,0
+1771085496057,122,View Tickets,200,OK,Test 5 - Mixed Concurrent Operations 5-2,text,true,,3718,502,4,27,http://localhost:17800/ticket-system/login.xhtml,68,0,0
+1771085496057,68,View Tickets-0,302,Found,Test 5 - Mixed Concurrent Operations 5-2,,true,,157,252,4,27,http://localhost:17800/ticket-system/tickets.xhtml,68,0,0
+1771085496125,54,View Tickets-1,200,OK,Test 5 - Mixed Concurrent Operations 5-2,text,true,,3561,250,4,27,http://localhost:17800/ticket-system/login.xhtml,54,0,1
+1771085496143,51,Login,200,OK,Test 5 - Mixed Concurrent Operations 5-4,text,true,,4124,182,4,27,http://localhost:17800/ticket-system/login.xhtml,51,0,0
+1771085496097,116,Create Ticket - Same Number 99999,200,OK,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-2,text,false,Expected either success or uniqueness violation error,3717,889,10,27,http://localhost:17800/ticket-system/login.xhtml,64,0,0
+1771085496097,64,Create Ticket - Same Number 99999-0,302,Found,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-2,,true,,157,639,10,27,http://localhost:17800/ticket-system/tickets.xhtml,64,0,0
+1771085496101,112,Create Ticket - Same Number 99999,200,OK,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-1,text,false,Expected either success or uniqueness violation error,3717,890,10,27,http://localhost:17800/ticket-system/login.xhtml,60,0,0
+1771085496161,52,Create Ticket - Same Number 99999-1,200,OK,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-2,text,true,,3560,250,10,27,http://localhost:17800/ticket-system/login.xhtml,52,0,1
+1771085496101,60,Create Ticket - Same Number 99999-0,302,Found,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-1,,true,,157,640,10,27,http://localhost:17800/ticket-system/tickets.xhtml,60,0,0
+1771085496161,52,Create Ticket - Same Number 99999-1,200,OK,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-1,text,true,,3560,250,10,27,http://localhost:17800/ticket-system/login.xhtml,52,0,1
+1771085496101,114,Create Ticket - Same Number 99999,200,OK,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-10,text,false,Expected either success or uniqueness violation error,3715,890,8,25,http://localhost:17800/ticket-system/login.xhtml,69,0,1
+1771085496102,113,Create Ticket - Same Number 99999,200,OK,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-6,text,false,Expected either success or uniqueness violation error,3717,886,8,25,http://localhost:17800/ticket-system/login.xhtml,68,0,1
+1771085496101,69,Create Ticket - Same Number 99999-0,302,Found,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-10,,true,,157,640,8,25,http://localhost:17800/ticket-system/tickets.xhtml,69,0,1
+1771085496102,68,Create Ticket - Same Number 99999-0,302,Found,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-6,,true,,157,636,8,25,http://localhost:17800/ticket-system/tickets.xhtml,68,0,1
+1771085496097,118,Create Ticket - Same Number 99999,200,OK,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-7,text,false,Expected either success or uniqueness violation error,3716,889,8,25,http://localhost:17800/ticket-system/login.xhtml,64,0,0
+1771085496170,45,Create Ticket - Same Number 99999-1,200,OK,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-10,text,true,,3558,250,8,25,http://localhost:17800/ticket-system/login.xhtml,45,0,0
+1771085496170,45,Create Ticket - Same Number 99999-1,200,OK,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-6,text,true,,3560,250,8,25,http://localhost:17800/ticket-system/login.xhtml,45,0,0
+1771085496097,64,Create Ticket - Same Number 99999-0,302,Found,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-7,,true,,157,639,8,25,http://localhost:17800/ticket-system/tickets.xhtml,64,0,0
+1771085496161,54,Create Ticket - Same Number 99999-1,200,OK,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-7,text,true,,3559,250,8,25,http://localhost:17800/ticket-system/login.xhtml,54,0,1
+1771085496102,113,Create Ticket - Same Number 99999,200,OK,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-4,text,false,Expected either success or uniqueness violation error,3717,888,8,25,http://localhost:17800/ticket-system/login.xhtml,68,0,1
+1771085496102,68,Create Ticket - Same Number 99999-0,302,Found,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-4,,true,,157,638,8,25,http://localhost:17800/ticket-system/tickets.xhtml,68,0,1
+1771085496170,45,Create Ticket - Same Number 99999-1,200,OK,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-4,text,true,,3560,250,8,25,http://localhost:17800/ticket-system/login.xhtml,45,0,1
+1771085496097,118,Create Ticket - Same Number 99999,200,OK,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-8,text,false,Expected either success or uniqueness violation error,3717,888,8,25,http://localhost:17800/ticket-system/login.xhtml,64,0,0
+1771085496097,64,Create Ticket - Same Number 99999-0,302,Found,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-8,,true,,157,638,8,25,http://localhost:17800/ticket-system/tickets.xhtml,64,0,0
+1771085496161,54,Create Ticket - Same Number 99999-1,200,OK,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-8,text,true,,3560,250,8,25,http://localhost:17800/ticket-system/login.xhtml,54,0,1
+1771085496100,115,Upload Import File,200,OK,Test 4 - Concurrent Import Operations 4-4,text,false,Test failed: text expected to match /imported|failed/,3716,1790,5,25,http://localhost:17800/ticket-system/login.xhtml,70,0,4
+1771085496100,70,Upload Import File-0,302,Found,Test 4 - Concurrent Import Operations 4-4,,true,,157,1540,5,25,http://localhost:17800/ticket-system/import.xhtml,70,0,4
+1771085496170,45,Upload Import File-1,200,OK,Test 4 - Concurrent Import Operations 4-4,text,true,,3559,250,5,25,http://localhost:17800/ticket-system/login.xhtml,45,0,0
+1771085496117,99,Update Ticket - Concurrent,200,OK,Test 2 - Concurrent Update Same Ticket 2-4,text,true,,3716,819,5,19,http://localhost:17800/ticket-system/login.xhtml,54,0,1
+1771085496106,110,Delete Ticket - Concurrent,200,OK,Test 3 - Concurrent Delete Same Ticket 3-1,text,false,Test failed: text expected to match /deleted successfully|Error/,3716,691,3,19,http://localhost:17800/ticket-system/login.xhtml,64,0,1
+1771085496117,54,Update Ticket - Concurrent-0,302,Found,Test 2 - Concurrent Update Same Ticket 2-4,,true,,157,569,5,19,http://localhost:17800/ticket-system/tickets.xhtml,54,0,1
+1771085496106,64,Delete Ticket - Concurrent-0,302,Found,Test 3 - Concurrent Delete Same Ticket 3-1,,true,,157,441,3,19,http://localhost:17800/ticket-system/tickets.xhtml,64,0,1
+1771085496171,45,Update Ticket - Concurrent-1,200,OK,Test 2 - Concurrent Update Same Ticket 2-4,text,true,,3559,250,5,19,http://localhost:17800/ticket-system/login.xhtml,45,0,1
+1771085496170,46,Delete Ticket - Concurrent-1,200,OK,Test 3 - Concurrent Delete Same Ticket 3-1,text,true,,3559,250,3,19,http://localhost:17800/ticket-system/login.xhtml,46,0,1
+1771085496179,73,Login,200,OK,Test 5 - Mixed Concurrent Operations 5-2,text,true,,3560,250,5,18,http://localhost:17800/ticket-system/login.xhtml,73,0,1
+1771085496117,135,Update Ticket - Concurrent,200,OK,Test 2 - Concurrent Update Same Ticket 2-5,text,true,,3717,817,4,18,http://localhost:17800/ticket-system/login.xhtml,54,0,1
+1771085496117,54,Update Ticket - Concurrent-0,302,Found,Test 2 - Concurrent Update Same Ticket 2-5,,true,,157,567,4,18,http://localhost:17800/ticket-system/tickets.xhtml,54,0,1
+1771085496117,135,Update Ticket - Concurrent,200,OK,Test 2 - Concurrent Update Same Ticket 2-3,text,true,,3715,819,4,18,http://localhost:17800/ticket-system/login.xhtml,59,0,1
+1771085496171,81,Update Ticket - Concurrent-1,200,OK,Test 2 - Concurrent Update Same Ticket 2-5,text,true,,3560,250,4,18,http://localhost:17800/ticket-system/login.xhtml,81,0,0
+1771085496127,125,Upload Import File,200,OK,Test 4 - Concurrent Import Operations 4-2,text,false,Test failed: text expected to match /imported|failed/,3717,1776,4,18,http://localhost:17800/ticket-system/login.xhtml,63,0,2
+1771085496127,63,Upload Import File-0,302,Found,Test 4 - Concurrent Import Operations 4-2,,true,,157,1526,4,18,http://localhost:17800/ticket-system/import.xhtml,63,0,2
+1771085496190,62,Upload Import File-1,200,OK,Test 4 - Concurrent Import Operations 4-2,text,true,,3560,250,4,18,http://localhost:17800/ticket-system/login.xhtml,62,0,0
+1771085496125,127,Create Ticket - Same Number 99999,200,OK,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-3,text,false,Expected either success or uniqueness violation error,3718,890,3,18,http://localhost:17800/ticket-system/login.xhtml,64,0,1
+1771085496125,64,Create Ticket - Same Number 99999-0,302,Found,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-3,,true,,157,640,3,18,http://localhost:17800/ticket-system/tickets.xhtml,64,0,1
+1771085496189,63,Create Ticket - Same Number 99999-1,200,OK,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-3,text,true,,3561,250,3,18,http://localhost:17800/ticket-system/login.xhtml,63,0,1
+1771085496125,127,Create Ticket - Same Number 99999,200,OK,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-9,text,false,Expected either success or uniqueness violation error,3717,889,3,18,http://localhost:17800/ticket-system/login.xhtml,64,0,1
+1771085496125,64,Create Ticket - Same Number 99999-0,302,Found,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-9,,true,,157,639,3,18,http://localhost:17800/ticket-system/tickets.xhtml,64,0,1
+1771085496189,63,Create Ticket - Same Number 99999-1,200,OK,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-9,text,true,,3560,250,3,18,http://localhost:17800/ticket-system/login.xhtml,63,0,1
+1771085496117,135,Create Ticket - Same Number 99999,200,OK,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-5,text,false,Expected either success or uniqueness violation error,3715,889,3,18,http://localhost:17800/ticket-system/login.xhtml,54,0,1
+1771085496117,54,Create Ticket - Same Number 99999-0,302,Found,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-5,,true,,157,639,3,18,http://localhost:17800/ticket-system/tickets.xhtml,54,0,1
+1771085496171,81,Create Ticket - Same Number 99999-1,200,OK,Test 1 - Concurrent Create Same Number (Uniqueness Check) 1-5,text,true,,3558,250,3,18,http://localhost:17800/ticket-system/login.xhtml,81,0,0
+1771085496117,59,Update Ticket - Concurrent-0,302,Found,Test 2 - Concurrent Update Same Ticket 2-3,,true,,157,569,4,18,http://localhost:17800/ticket-system/tickets.xhtml,59,0,1
+1771085496177,75,Update Ticket - Concurrent-1,200,OK,Test 2 - Concurrent Update Same Ticket 2-3,text,true,,3558,250,4,18,http://localhost:17800/ticket-system/login.xhtml,75,0,0
+1771085496126,126,Update Ticket - Concurrent,200,OK,Test 2 - Concurrent Update Same Ticket 2-2,text,true,,3718,819,4,18,http://localhost:17800/ticket-system/login.xhtml,64,0,0
+1771085496126,64,Update Ticket - Concurrent-0,302,Found,Test 2 - Concurrent Update Same Ticket 2-2,,true,,157,569,4,18,http://localhost:17800/ticket-system/tickets.xhtml,64,0,0
+1771085496190,62,Update Ticket - Concurrent-1,200,OK,Test 2 - Concurrent Update Same Ticket 2-2,text,true,,3561,250,4,18,http://localhost:17800/ticket-system/login.xhtml,62,0,0
+1771085496126,128,Update Ticket - Concurrent,200,OK,Test 2 - Concurrent Update Same Ticket 2-1,text,true,,3716,819,1,11,http://localhost:17800/ticket-system/login.xhtml,64,0,0
+1771085496126,64,Update Ticket - Concurrent-0,302,Found,Test 2 - Concurrent Update Same Ticket 2-1,,true,,157,569,1,11,http://localhost:17800/ticket-system/tickets.xhtml,64,0,0
+1771085496190,64,Update Ticket - Concurrent-1,200,OK,Test 2 - Concurrent Update Same Ticket 2-1,text,true,,3559,250,1,11,http://localhost:17800/ticket-system/login.xhtml,64,0,0
+1771085496125,129,Upload Import File,200,OK,Test 4 - Concurrent Import Operations 4-3,text,false,Test failed: text expected to match /imported|failed/,3717,1784,3,11,http://localhost:17800/ticket-system/login.xhtml,65,0,2
+1771085496125,65,Upload Import File-0,302,Found,Test 4 - Concurrent Import Operations 4-3,,true,,157,1534,3,11,http://localhost:17800/ticket-system/import.xhtml,65,0,2
+1771085496136,118,Upload Import File,200,OK,Test 4 - Concurrent Import Operations 4-1,text,false,Test failed: text expected to match /imported|failed/,3716,1818,3,11,http://localhost:17800/ticket-system/login.xhtml,56,0,1
+1771085496190,64,Upload Import File-1,200,OK,Test 4 - Concurrent Import Operations 4-3,text,true,,3560,250,3,11,http://localhost:17800/ticket-system/login.xhtml,64,0,1
+1771085496136,56,Upload Import File-0,302,Found,Test 4 - Concurrent Import Operations 4-1,,true,,157,1568,3,11,http://localhost:17800/ticket-system/import.xhtml,56,0,1
+1771085496192,62,Upload Import File-1,200,OK,Test 4 - Concurrent Import Operations 4-1,text,true,,3559,250,3,11,http://localhost:17800/ticket-system/login.xhtml,62,0,1
+1771085496195,75,Submit Login,200,OK,Test 5 - Mixed Concurrent Operations 5-4,text,true,,3560,428,5,8,http://localhost:17800/ticket-system/login.xhtml,75,0,0
+1771085496136,134,Delete Ticket - Concurrent,200,OK,Test 3 - Concurrent Delete Same Ticket 3-2,text,false,Test failed: text expected to match /deleted successfully|Error/,3717,692,2,8,http://localhost:17800/ticket-system/login.xhtml,56,0,0
+1771085496136,134,Delete Ticket - Concurrent,200,OK,Test 3 - Concurrent Delete Same Ticket 3-3,text,false,Test failed: text expected to match /deleted successfully|Error/,3717,692,2,8,http://localhost:17800/ticket-system/login.xhtml,56,0,0
+1771085496136,56,Delete Ticket - Concurrent-0,302,Found,Test 3 - Concurrent Delete Same Ticket 3-2,,true,,157,442,2,8,http://localhost:17800/ticket-system/tickets.xhtml,56,0,0
+1771085496136,56,Delete Ticket - Concurrent-0,302,Found,Test 3 - Concurrent Delete Same Ticket 3-3,,true,,157,442,2,8,http://localhost:17800/ticket-system/tickets.xhtml,56,0,0
+1771085496192,78,Delete Ticket - Concurrent-1,200,OK,Test 3 - Concurrent Delete Same Ticket 3-2,text,true,,3560,250,2,8,http://localhost:17800/ticket-system/login.xhtml,78,0,1
+1771085496192,78,Delete Ticket - Concurrent-1,200,OK,Test 3 - Concurrent Delete Same Ticket 3-3,text,true,,3560,250,2,8,http://localhost:17800/ticket-system/login.xhtml,78,0,1
+1771085496170,106,Upload Import File,200,OK,Test 4 - Concurrent Import Operations 4-5,text,false,Test failed: text expected to match /imported|failed/,3716,1807,1,6,http://localhost:17800/ticket-system/login.xhtml,43,0,2
+1771085496170,43,Upload Import File-0,302,Found,Test 4 - Concurrent Import Operations 4-5,,true,,157,1557,1,6,http://localhost:17800/ticket-system/import.xhtml,43,0,2
+1771085496213,63,Upload Import File-1,200,OK,Test 4 - Concurrent Import Operations 4-5,text,true,,3559,250,1,6,http://localhost:17800/ticket-system/login.xhtml,63,0,0
+1771085496170,106,Load Tickets Page,200,OK,Test 5 - Mixed Concurrent Operations 5-3,text,true,,3718,502,5,6,http://localhost:17800/ticket-system/login.xhtml,40,0,0
+1771085496170,40,Load Tickets Page-0,302,Found,Test 5 - Mixed Concurrent Operations 5-3,,true,,157,252,5,6,http://localhost:17800/ticket-system/tickets.xhtml,40,0,0
+1771085496210,66,Load Tickets Page-1,200,OK,Test 5 - Mixed Concurrent Operations 5-3,text,true,,3561,250,5,6,http://localhost:17800/ticket-system/login.xhtml,66,0,1
+1771085496162,114,Update Random Ticket,200,OK,Test 5 - Mixed Concurrent Operations 5-1,text,true,,3718,670,5,6,http://localhost:17800/ticket-system/login.xhtml,48,0,0
+1771085496162,48,Update Random Ticket-0,302,Found,Test 5 - Mixed Concurrent Operations 5-1,,true,,157,420,5,6,http://localhost:17800/ticket-system/tickets.xhtml,48,0,0
+1771085496210,66,Update Random Ticket-1,200,OK,Test 5 - Mixed Concurrent Operations 5-1,text,true,,3561,250,5,6,http://localhost:17800/ticket-system/login.xhtml,66,0,1
+1771085496242,48,Login,200,OK,Test 5 - Mixed Concurrent Operations 5-5,text,true,,4124,182,5,5,http://localhost:17800/ticket-system/login.xhtml,48,0,0
+1771085496252,44,Submit Login,200,OK,Test 5 - Mixed Concurrent Operations 5-2,text,true,,3559,429,5,5,http://localhost:17800/ticket-system/login.xhtml,44,0,1
+1771085496277,40,Login,200,OK,Test 5 - Mixed Concurrent Operations 5-1,text,true,,3559,250,5,5,http://localhost:17800/ticket-system/login.xhtml,40,0,0
+1771085496291,47,Submit Login,200,OK,Test 5 - Mixed Concurrent Operations 5-5,text,true,,3559,428,5,5,http://localhost:17800/ticket-system/login.xhtml,47,0,0
+1771085496270,77,View Tickets,200,OK,Test 5 - Mixed Concurrent Operations 5-4,text,true,,3717,502,6,6,http://localhost:17800/ticket-system/login.xhtml,37,0,0
+1771085496270,37,View Tickets-0,302,Found,Test 5 - Mixed Concurrent Operations 5-4,,true,,157,252,6,6,http://localhost:17800/ticket-system/tickets.xhtml,37,0,0
+1771085496307,40,View Tickets-1,200,OK,Test 5 - Mixed Concurrent Operations 5-4,text,true,,3560,250,6,6,http://localhost:17800/ticket-system/login.xhtml,40,0,1
+1771085496276,83,Create Ticket,200,OK,Test 5 - Mixed Concurrent Operations 5-3,text,true,,3717,924,6,6,http://localhost:17800/ticket-system/login.xhtml,37,0,1
+1771085496276,37,Create Ticket-0,302,Found,Test 5 - Mixed Concurrent Operations 5-3,,true,,157,674,6,6,http://localhost:17800/ticket-system/tickets.xhtml,37,0,1
+1771085496313,46,Create Ticket-1,200,OK,Test 5 - Mixed Concurrent Operations 5-3,text,true,,3560,250,6,6,http://localhost:17800/ticket-system/login.xhtml,46,0,1
+1771085496317,43,Submit Login,200,OK,Test 5 - Mixed Concurrent Operations 5-1,text,true,,3560,428,6,6,http://localhost:17800/ticket-system/login.xhtml,43,0,0
+1771085496296,84,View Tickets,200,OK,Test 5 - Mixed Concurrent Operations 5-2,text,true,,3717,502,6,6,http://localhost:17800/ticket-system/login.xhtml,43,0,1
+1771085496296,43,View Tickets-0,302,Found,Test 5 - Mixed Concurrent Operations 5-2,,true,,157,252,6,6,http://localhost:17800/ticket-system/tickets.xhtml,43,0,1
+1771085496339,41,View Tickets-1,200,OK,Test 5 - Mixed Concurrent Operations 5-2,text,true,,3560,250,6,6,http://localhost:17800/ticket-system/login.xhtml,41,0,1
+1771085496342,38,Login,200,OK,Test 5 - Mixed Concurrent Operations 5-6,text,true,,4126,182,6,6,http://localhost:17800/ticket-system/login.xhtml,38,0,0
+1771085496348,44,Login,200,OK,Test 5 - Mixed Concurrent Operations 5-4,text,true,,3559,250,6,6,http://localhost:17800/ticket-system/login.xhtml,44,0,0
+1771085496359,41,Login,200,OK,Test 5 - Mixed Concurrent Operations 5-3,text,true,,3561,250,6,6,http://localhost:17800/ticket-system/login.xhtml,41,0,1
+1771085496381,40,Submit Login,200,OK,Test 5 - Mixed Concurrent Operations 5-6,text,true,,3561,430,6,6,http://localhost:17800/ticket-system/login.xhtml,40,0,0
+1771085496381,40,Login,200,OK,Test 5 - Mixed Concurrent Operations 5-2,text,true,,3559,250,6,6,http://localhost:17800/ticket-system/login.xhtml,40,0,0
+1771085496338,84,View Tickets,200,OK,Test 5 - Mixed Concurrent Operations 5-5,text,true,,3716,502,6,6,http://localhost:17800/ticket-system/login.xhtml,42,0,0
+1771085496338,42,View Tickets-0,302,Found,Test 5 - Mixed Concurrent Operations 5-5,,true,,157,252,6,6,http://localhost:17800/ticket-system/tickets.xhtml,42,0,0
+1771085496380,42,View Tickets-1,200,OK,Test 5 - Mixed Concurrent Operations 5-5,text,true,,3559,250,6,6,http://localhost:17800/ticket-system/login.xhtml,41,0,1
+1771085496393,58,Submit Login,200,OK,Test 5 - Mixed Concurrent Operations 5-4,text,true,,3561,428,7,7,http://localhost:17800/ticket-system/login.xhtml,58,0,0
+1771085496360,91,View Tickets,200,OK,Test 5 - Mixed Concurrent Operations 5-1,text,true,,3718,502,7,7,http://localhost:17800/ticket-system/login.xhtml,38,0,0
+1771085496360,38,View Tickets-0,302,Found,Test 5 - Mixed Concurrent Operations 5-1,,true,,157,252,7,7,http://localhost:17800/ticket-system/tickets.xhtml,38,0,0
+1771085496398,53,View Tickets-1,200,OK,Test 5 - Mixed Concurrent Operations 5-1,text,true,,3561,250,7,7,http://localhost:17800/ticket-system/login.xhtml,53,0,0
+1771085496400,51,Submit Login,200,OK,Test 5 - Mixed Concurrent Operations 5-3,text,true,,3561,430,7,7,http://localhost:17800/ticket-system/login.xhtml,51,0,0
+1771085496422,50,Submit Login,200,OK,Test 5 - Mixed Concurrent Operations 5-2,text,true,,3559,428,7,7,http://localhost:17800/ticket-system/login.xhtml,50,0,0
+1771085496422,50,Login,200,OK,Test 5 - Mixed Concurrent Operations 5-5,text,true,,3559,250,7,7,http://localhost:17800/ticket-system/login.xhtml,49,0,1
+1771085496441,44,Login,200,OK,Test 5 - Mixed Concurrent Operations 5-7,text,true,,4125,182,7,7,http://localhost:17800/ticket-system/login.xhtml,44,0,1
+1771085496451,36,Login,200,OK,Test 5 - Mixed Concurrent Operations 5-1,text,true,,3560,250,7,7,http://localhost:17800/ticket-system/login.xhtml,36,0,1
+1771085496422,87,View Tickets,200,OK,Test 5 - Mixed Concurrent Operations 5-6,text,true,,3717,502,7,7,http://localhost:17800/ticket-system/login.xhtml,46,0,0
+1771085496422,46,View Tickets-0,302,Found,Test 5 - Mixed Concurrent Operations 5-6,,true,,157,252,7,7,http://localhost:17800/ticket-system/tickets.xhtml,46,0,0
+1771085496468,41,View Tickets-1,200,OK,Test 5 - Mixed Concurrent Operations 5-6,text,true,,3560,250,7,7,http://localhost:17800/ticket-system/login.xhtml,41,0,0
+1771085496472,39,Submit Login,200,OK,Test 5 - Mixed Concurrent Operations 5-5,text,true,,3560,428,7,7,http://localhost:17800/ticket-system/login.xhtml,39,0,0
+1771085496451,69,View Tickets,200,OK,Test 5 - Mixed Concurrent Operations 5-4,text,true,,3717,502,7,7,http://localhost:17800/ticket-system/login.xhtml,33,0,1
+1771085496451,33,View Tickets-0,302,Found,Test 5 - Mixed Concurrent Operations 5-4,,true,,157,252,7,7,http://localhost:17800/ticket-system/tickets.xhtml,33,0,1
+1771085496484,36,View Tickets-1,200,OK,Test 5 - Mixed Concurrent Operations 5-4,text,true,,3560,250,7,7,http://localhost:17800/ticket-system/login.xhtml,36,0,0
+1771085496486,37,Submit Login,200,OK,Test 5 - Mixed Concurrent Operations 5-7,text,true,,3560,429,7,7,http://localhost:17800/ticket-system/login.xhtml,37,0,0
+1771085496487,47,Submit Login,200,OK,Test 5 - Mixed Concurrent Operations 5-1,text,true,,3560,429,7,7,http://localhost:17800/ticket-system/login.xhtml,47,0,0
+1771085496451,83,Load Tickets Page,200,OK,Test 5 - Mixed Concurrent Operations 5-3,text,true,,3718,502,7,7,http://localhost:17800/ticket-system/login.xhtml,38,0,1
+1771085496451,38,Load Tickets Page-0,302,Found,Test 5 - Mixed Concurrent Operations 5-3,,true,,157,252,7,7,http://localhost:17800/ticket-system/tickets.xhtml,38,0,1
+1771085496489,45,Load Tickets Page-1,200,OK,Test 5 - Mixed Concurrent Operations 5-3,text,true,,3561,250,7,7,http://localhost:17800/ticket-system/login.xhtml,45,0,0
+1771085496510,44,Login,200,OK,Test 5 - Mixed Concurrent Operations 5-6,text,true,,3560,250,8,8,http://localhost:17800/ticket-system/login.xhtml,43,0,0
+1771085496472,83,View Tickets,200,OK,Test 5 - Mixed Concurrent Operations 5-2,text,true,,3717,502,8,8,http://localhost:17800/ticket-system/login.xhtml,37,0,0
+1771085496472,37,View Tickets-0,302,Found,Test 5 - Mixed Concurrent Operations 5-2,,true,,157,252,8,8,http://localhost:17800/ticket-system/tickets.xhtml,37,0,0
+1771085496509,46,View Tickets-1,200,OK,Test 5 - Mixed Concurrent Operations 5-2,text,true,,3560,250,8,8,http://localhost:17800/ticket-system/login.xhtml,45,0,1
+1771085496520,44,Login,200,OK,Test 5 - Mixed Concurrent Operations 5-4,text,true,,3561,250,7,7,http://localhost:17800/ticket-system/login.xhtml,44,0,1
+1771085496542,42,Login,200,OK,Test 5 - Mixed Concurrent Operations 5-8,text,true,,4125,182,7,7,http://localhost:17800/ticket-system/login.xhtml,42,0,0
+1771085496511,82,Load Tickets for Update,200,OK,Test 5 - Mixed Concurrent Operations 5-5,text,true,,3718,502,7,7,http://localhost:17800/ticket-system/login.xhtml,42,0,0
+1771085496511,42,Load Tickets for Update-0,302,Found,Test 5 - Mixed Concurrent Operations 5-5,,true,,157,252,7,7,http://localhost:17800/ticket-system/tickets.xhtml,42,0,0
+1771085496553,40,Load Tickets for Update-1,200,OK,Test 5 - Mixed Concurrent Operations 5-5,text,true,,3561,250,7,7,http://localhost:17800/ticket-system/login.xhtml,40,0,0
+1771085496554,40,Submit Login,200,OK,Test 5 - Mixed Concurrent Operations 5-6,text,true,,3560,429,7,7,http://localhost:17800/ticket-system/login.xhtml,40,0,0
+1771085496523,81,Load Tickets for Update,200,OK,Test 5 - Mixed Concurrent Operations 5-7,text,true,,3717,502,7,7,http://localhost:17800/ticket-system/login.xhtml,40,0,0
+1771085496523,40,Load Tickets for Update-0,302,Found,Test 5 - Mixed Concurrent Operations 5-7,,true,,157,252,7,7,http://localhost:17800/ticket-system/tickets.xhtml,40,0,0
+1771085496563,41,Load Tickets for Update-1,200,OK,Test 5 - Mixed Concurrent Operations 5-7,text,true,,3560,250,7,7,http://localhost:17800/ticket-system/login.xhtml,41,0,0
+1771085496565,40,Submit Login,200,OK,Test 5 - Mixed Concurrent Operations 5-4,text,true,,3561,430,7,7,http://localhost:17800/ticket-system/login.xhtml,40,0,0
+1771085496584,39,Submit Login,200,OK,Test 5 - Mixed Concurrent Operations 5-8,text,true,,3560,429,7,7,http://localhost:17800/ticket-system/login.xhtml,39,0,0
+1771085496535,88,Create Ticket,200,OK,Test 5 - Mixed Concurrent Operations 5-3,text,true,,3716,921,7,7,http://localhost:17800/ticket-system/login.xhtml,49,0,0
+1771085496535,49,Create Ticket-0,302,Found,Test 5 - Mixed Concurrent Operations 5-3,,true,,157,671,7,7,http://localhost:17800/ticket-system/tickets.xhtml,49,0,0
+1771085496535,88,View Tickets,200,OK,Test 5 - Mixed Concurrent Operations 5-1,text,true,,3717,502,7,7,http://localhost:17800/ticket-system/login.xhtml,49,0,0
+1771085496584,39,Create Ticket-1,200,OK,Test 5 - Mixed Concurrent Operations 5-3,text,true,,3559,250,7,7,http://localhost:17800/ticket-system/login.xhtml,39,0,0
+1771085496535,49,View Tickets-0,302,Found,Test 5 - Mixed Concurrent Operations 5-1,,true,,157,252,7,7,http://localhost:17800/ticket-system/tickets.xhtml,49,0,0
+1771085496584,39,View Tickets-1,200,OK,Test 5 - Mixed Concurrent Operations 5-1,text,true,,3560,250,7,7,http://localhost:17800/ticket-system/login.xhtml,39,0,0
+1771085496624,44,Login,200,OK,Test 5 - Mixed Concurrent Operations 5-3,text,true,,3560,250,7,7,http://localhost:17800/ticket-system/login.xhtml,43,0,0
+1771085496594,74,Load Tickets Page,200,OK,Test 5 - Mixed Concurrent Operations 5-6,text,true,,3717,502,7,7,http://localhost:17800/ticket-system/login.xhtml,35,0,0
+1771085496594,35,Load Tickets Page-0,302,Found,Test 5 - Mixed Concurrent Operations 5-6,,true,,157,252,7,7,http://localhost:17800/ticket-system/tickets.xhtml,35,0,0
+1771085496629,39,Load Tickets Page-1,200,OK,Test 5 - Mixed Concurrent Operations 5-6,text,true,,3560,250,7,7,http://localhost:17800/ticket-system/login.xhtml,38,0,0
+1771085496593,75,Update Random Ticket,200,OK,Test 5 - Mixed Concurrent Operations 5-5,text,true,,3716,670,7,7,http://localhost:17800/ticket-system/login.xhtml,36,0,0
+1771085496593,36,Update Random Ticket-0,302,Found,Test 5 - Mixed Concurrent Operations 5-5,,true,,157,420,7,7,http://localhost:17800/ticket-system/tickets.xhtml,36,0,0
+1771085496629,39,Update Random Ticket-1,200,OK,Test 5 - Mixed Concurrent Operations 5-5,text,true,,3559,250,7,7,http://localhost:17800/ticket-system/login.xhtml,39,0,0
+1771085496605,88,Update Random Ticket,200,OK,Test 5 - Mixed Concurrent Operations 5-7,text,true,,3717,669,7,7,http://localhost:17800/ticket-system/login.xhtml,42,0,0
+1771085496605,42,Update Random Ticket-0,302,Found,Test 5 - Mixed Concurrent Operations 5-7,,true,,157,419,7,7,http://localhost:17800/ticket-system/tickets.xhtml,42,0,0
+1771085496647,46,Update Random Ticket-1,200,OK,Test 5 - Mixed Concurrent Operations 5-7,text,true,,3560,250,7,7,http://localhost:17800/ticket-system/login.xhtml,46,0,1
+1771085496643,51,Login,200,OK,Test 5 - Mixed Concurrent Operations 5-9,text,true,,4126,182,7,7,http://localhost:17800/ticket-system/login.xhtml,51,0,1
+1771085496605,89,Load Tickets for Update,200,OK,Test 5 - Mixed Concurrent Operations 5-4,text,true,,3716,502,7,7,http://localhost:17800/ticket-system/login.xhtml,43,0,1
+1771085496605,43,Load Tickets for Update-0,302,Found,Test 5 - Mixed Concurrent Operations 5-4,,true,,157,252,7,7,http://localhost:17800/ticket-system/tickets.xhtml,43,0,1
+1771085496648,46,Load Tickets for Update-1,200,OK,Test 5 - Mixed Concurrent Operations 5-4,text,true,,3559,250,7,7,http://localhost:17800/ticket-system/login.xhtml,46,0,0
+1771085496668,48,Submit Login,200,OK,Test 5 - Mixed Concurrent Operations 5-3,text,true,,3561,429,7,7,http://localhost:17800/ticket-system/login.xhtml,47,0,0
+1771085496623,93,View Tickets,200,OK,Test 5 - Mixed Concurrent Operations 5-8,text,true,,3716,502,7,7,http://localhost:17800/ticket-system/login.xhtml,42,0,1
+1771085496623,42,View Tickets-0,302,Found,Test 5 - Mixed Concurrent Operations 5-8,,true,,157,252,7,7,http://localhost:17800/ticket-system/tickets.xhtml,42,0,1
+1771085496665,51,View Tickets-1,200,OK,Test 5 - Mixed Concurrent Operations 5-8,text,true,,3559,250,7,7,http://localhost:17800/ticket-system/login.xhtml,50,0,1
+1771085496668,48,Login,200,OK,Test 5 - Mixed Concurrent Operations 5-5,text,true,,3559,250,7,7,http://localhost:17800/ticket-system/login.xhtml,47,0,1
+1771085496696,54,Submit Login,200,OK,Test 5 - Mixed Concurrent Operations 5-9,text,true,,3560,430,8,8,http://localhost:17800/ticket-system/login.xhtml,54,0,1
+1771085496697,53,Login,200,OK,Test 5 - Mixed Concurrent Operations 5-7,text,true,,3560,250,8,8,http://localhost:17800/ticket-system/login.xhtml,53,0,1
+1771085496716,60,Submit Login,200,OK,Test 5 - Mixed Concurrent Operations 5-5,text,true,,3559,428,8,8,http://localhost:17800/ticket-system/login.xhtml,60,0,0
+1771085496668,114,Create Ticket,200,OK,Test 5 - Mixed Concurrent Operations 5-6,text,true,,3717,923,8,8,http://localhost:17800/ticket-system/login.xhtml,46,0,0
+1771085496668,46,Create Ticket-0,302,Found,Test 5 - Mixed Concurrent Operations 5-6,,true,,157,673,8,8,http://localhost:17800/ticket-system/tickets.xhtml,46,0,0
+1771085496714,68,Create Ticket-1,200,OK,Test 5 - Mixed Concurrent Operations 5-6,text,true,,3560,250,8,8,http://localhost:17800/ticket-system/login.xhtml,68,0,0
+1771085496716,66,Login,200,OK,Test 5 - Mixed Concurrent Operations 5-8,text,true,,3559,250,8,8,http://localhost:17800/ticket-system/login.xhtml,66,0,1
+1771085496741,55,Login,200,OK,Test 5 - Mixed Concurrent Operations 5-10,text,true,,4125,182,8,8,http://localhost:17800/ticket-system/login.xhtml,55,0,1
+1771085496697,114,Update Random Ticket,200,OK,Test 5 - Mixed Concurrent Operations 5-4,text,true,,3717,669,8,8,http://localhost:17800/ticket-system/login.xhtml,53,0,0
+1771085496750,61,Submit Login,200,OK,Test 5 - Mixed Concurrent Operations 5-7,text,true,,3560,429,8,8,http://localhost:17800/ticket-system/login.xhtml,61,0,0
+1771085496697,53,Update Random Ticket-0,302,Found,Test 5 - Mixed Concurrent Operations 5-4,,true,,157,419,8,8,http://localhost:17800/ticket-system/tickets.xhtml,53,0,0
+1771085496750,61,Update Random Ticket-1,200,OK,Test 5 - Mixed Concurrent Operations 5-4,text,true,,3560,250,8,8,http://localhost:17800/ticket-system/login.xhtml,61,0,0
+1771085496716,106,View Tickets,200,OK,Test 5 - Mixed Concurrent Operations 5-3,text,true,,3717,502,7,7,http://localhost:17800/ticket-system/login.xhtml,58,0,0
+1771085496716,58,View Tickets-0,302,Found,Test 5 - Mixed Concurrent Operations 5-3,,true,,157,252,7,7,http://localhost:17800/ticket-system/tickets.xhtml,58,0,0
+1771085496774,48,View Tickets-1,200,OK,Test 5 - Mixed Concurrent Operations 5-3,text,true,,3560,250,7,7,http://localhost:17800/ticket-system/login.xhtml,48,0,0
+1771085496782,53,Login,200,OK,Test 5 - Mixed Concurrent Operations 5-6,text,true,,3561,250,6,6,http://localhost:17800/ticket-system/login.xhtml,52,0,1
+1771085496782,54,Submit Login,200,OK,Test 5 - Mixed Concurrent Operations 5-8,text,true,,3559,428,6,6,http://localhost:17800/ticket-system/login.xhtml,54,0,1
+1771085496796,42,Submit Login,200,OK,Test 5 - Mixed Concurrent Operations 5-10,text,true,,3561,429,6,6,http://localhost:17800/ticket-system/login.xhtml,42,0,0
+1771085496750,104,View Tickets,200,OK,Test 5 - Mixed Concurrent Operations 5-9,text,true,,3715,502,6,6,http://localhost:17800/ticket-system/login.xhtml,53,0,0
+1771085496750,53,View Tickets-0,302,Found,Test 5 - Mixed Concurrent Operations 5-9,,true,,157,252,6,6,http://localhost:17800/ticket-system/tickets.xhtml,53,0,0
+1771085496803,51,View Tickets-1,200,OK,Test 5 - Mixed Concurrent Operations 5-9,text,true,,3558,250,6,6,http://localhost:17800/ticket-system/login.xhtml,51,0,0
+1771085496776,101,Load Tickets for Update,200,OK,Test 5 - Mixed Concurrent Operations 5-5,text,true,,3716,502,6,6,http://localhost:17800/ticket-system/login.xhtml,55,0,0
+1771085496776,55,Load Tickets for Update-0,302,Found,Test 5 - Mixed Concurrent Operations 5-5,,true,,157,252,6,6,http://localhost:17800/ticket-system/tickets.xhtml,55,0,0
+1771085496831,46,Load Tickets for Update-1,200,OK,Test 5 - Mixed Concurrent Operations 5-5,text,true,,3559,250,6,6,http://localhost:17800/ticket-system/login.xhtml,46,0,1
+1771085496835,47,Submit Login,200,OK,Test 5 - Mixed Concurrent Operations 5-6,text,true,,3561,430,6,6,http://localhost:17800/ticket-system/login.xhtml,47,0,0
+1771085496812,88,Load Tickets for Update,200,OK,Test 5 - Mixed Concurrent Operations 5-7,text,true,,3716,502,6,6,http://localhost:17800/ticket-system/login.xhtml,42,0,0
+1771085496812,42,Load Tickets for Update-0,302,Found,Test 5 - Mixed Concurrent Operations 5-7,,true,,157,252,6,6,http://localhost:17800/ticket-system/tickets.xhtml,42,0,0
+1771085496854,46,Load Tickets for Update-1,200,OK,Test 5 - Mixed Concurrent Operations 5-7,text,true,,3559,250,6,6,http://localhost:17800/ticket-system/login.xhtml,46,0,1
+1771085496855,45,Login,200,OK,Test 5 - Mixed Concurrent Operations 5-9,text,true,,3559,250,6,6,http://localhost:17800/ticket-system/login.xhtml,45,0,0
+1771085496836,88,Load Tickets Page,200,OK,Test 5 - Mixed Concurrent Operations 5-8,text,true,,3717,502,6,6,http://localhost:17800/ticket-system/login.xhtml,42,0,0
+1771085496836,42,Load Tickets Page-0,302,Found,Test 5 - Mixed Concurrent Operations 5-8,,true,,157,252,6,6,http://localhost:17800/ticket-system/tickets.xhtml,42,0,0
+1771085496878,46,Load Tickets Page-1,200,OK,Test 5 - Mixed Concurrent Operations 5-8,text,true,,3560,250,6,6,http://localhost:17800/ticket-system/login.xhtml,46,0,0
+1771085496838,86,Load Tickets Page,200,OK,Test 5 - Mixed Concurrent Operations 5-10,text,true,,3716,502,6,6,http://localhost:17800/ticket-system/login.xhtml,40,0,1
+1771085496838,40,Load Tickets Page-0,302,Found,Test 5 - Mixed Concurrent Operations 5-10,,true,,157,252,6,6,http://localhost:17800/ticket-system/tickets.xhtml,40,0,1
+1771085496878,46,Load Tickets Page-1,200,OK,Test 5 - Mixed Concurrent Operations 5-10,text,true,,3559,250,6,6,http://localhost:17800/ticket-system/login.xhtml,46,0,0
+1771085496901,41,Submit Login,200,OK,Test 5 - Mixed Concurrent Operations 5-9,text,true,,3559,428,6,6,http://localhost:17800/ticket-system/login.xhtml,41,0,0
+1771085496883,94,View Tickets,200,OK,Test 5 - Mixed Concurrent Operations 5-6,text,true,,3716,502,6,6,http://localhost:17800/ticket-system/login.xhtml,39,0,0
+1771085496878,99,Update Random Ticket,200,OK,Test 5 - Mixed Concurrent Operations 5-5,text,true,,3717,669,6,6,http://localhost:17800/ticket-system/login.xhtml,44,0,0
+1771085496883,39,View Tickets-0,302,Found,Test 5 - Mixed Concurrent Operations 5-6,,true,,157,252,6,6,http://localhost:17800/ticket-system/tickets.xhtml,39,0,0
+1771085496878,44,Update Random Ticket-0,302,Found,Test 5 - Mixed Concurrent Operations 5-5,,true,,157,419,6,6,http://localhost:17800/ticket-system/tickets.xhtml,44,0,0
+1771085496922,55,View Tickets-1,200,OK,Test 5 - Mixed Concurrent Operations 5-6,text,true,,3559,250,6,6,http://localhost:17800/ticket-system/login.xhtml,55,0,0
+1771085496922,55,Update Random Ticket-1,200,OK,Test 5 - Mixed Concurrent Operations 5-5,text,true,,3560,250,6,6,http://localhost:17800/ticket-system/login.xhtml,55,0,0
+1771085496901,79,Update Random Ticket,200,OK,Test 5 - Mixed Concurrent Operations 5-7,text,true,,3717,668,4,4,http://localhost:17800/ticket-system/login.xhtml,39,0,0
+1771085496901,39,Update Random Ticket-0,302,Found,Test 5 - Mixed Concurrent Operations 5-7,,true,,157,418,4,4,http://localhost:17800/ticket-system/tickets.xhtml,39,0,0
+1771085496940,40,Update Random Ticket-1,200,OK,Test 5 - Mixed Concurrent Operations 5-7,text,true,,3560,250,4,4,http://localhost:17800/ticket-system/login.xhtml,40,0,0
+1771085496924,93,Create Ticket,200,OK,Test 5 - Mixed Concurrent Operations 5-8,text,true,,3717,922,4,4,http://localhost:17800/ticket-system/login.xhtml,51,0,0
+1771085496924,51,Create Ticket-0,302,Found,Test 5 - Mixed Concurrent Operations 5-8,,true,,157,672,4,4,http://localhost:17800/ticket-system/tickets.xhtml,51,0,0
+1771085496975,42,Create Ticket-1,200,OK,Test 5 - Mixed Concurrent Operations 5-8,text,true,,3560,250,4,4,http://localhost:17800/ticket-system/login.xhtml,42,0,1
+1771085496924,93,Create Ticket,200,OK,Test 5 - Mixed Concurrent Operations 5-10,text,true,,3716,922,4,4,http://localhost:17800/ticket-system/login.xhtml,53,0,0
+1771085496924,53,Create Ticket-0,302,Found,Test 5 - Mixed Concurrent Operations 5-10,,true,,157,672,4,4,http://localhost:17800/ticket-system/tickets.xhtml,53,0,0
+1771085496977,40,Create Ticket-1,200,OK,Test 5 - Mixed Concurrent Operations 5-10,text,true,,3559,250,4,4,http://localhost:17800/ticket-system/login.xhtml,40,0,1
+1771085496943,82,Load Tickets for Update,200,OK,Test 5 - Mixed Concurrent Operations 5-9,text,true,,3717,502,4,4,http://localhost:17800/ticket-system/login.xhtml,36,0,0
+1771085496943,36,Load Tickets for Update-0,302,Found,Test 5 - Mixed Concurrent Operations 5-9,,true,,157,252,4,4,http://localhost:17800/ticket-system/tickets.xhtml,36,0,0
+1771085496979,46,Load Tickets for Update-1,200,OK,Test 5 - Mixed Concurrent Operations 5-9,text,true,,3560,250,4,4,http://localhost:17800/ticket-system/login.xhtml,46,0,1
+1771085496980,46,Login,200,OK,Test 5 - Mixed Concurrent Operations 5-7,text,true,,3560,250,4,4,http://localhost:17800/ticket-system/login.xhtml,46,0,0
+1771085497017,46,Login,200,OK,Test 5 - Mixed Concurrent Operations 5-8,text,true,,3561,250,4,4,http://localhost:17800/ticket-system/login.xhtml,46,0,1
+1771085497018,45,Login,200,OK,Test 5 - Mixed Concurrent Operations 5-10,text,true,,3560,250,4,4,http://localhost:17800/ticket-system/login.xhtml,45,0,0
+1771085497026,41,Submit Login,200,OK,Test 5 - Mixed Concurrent Operations 5-7,text,true,,3560,429,4,4,http://localhost:17800/ticket-system/login.xhtml,41,0,1
+1771085497064,50,Submit Login,200,OK,Test 5 - Mixed Concurrent Operations 5-8,text,true,,3559,430,4,4,http://localhost:17800/ticket-system/login.xhtml,50,0,0
+1771085497064,50,Submit Login,200,OK,Test 5 - Mixed Concurrent Operations 5-10,text,true,,3560,429,4,4,http://localhost:17800/ticket-system/login.xhtml,50,0,0
+1771085497025,89,Update Random Ticket,200,OK,Test 5 - Mixed Concurrent Operations 5-9,text,true,,3718,670,4,4,http://localhost:17800/ticket-system/login.xhtml,39,0,1
+1771085497025,39,Update Random Ticket-0,302,Found,Test 5 - Mixed Concurrent Operations 5-9,,true,,157,420,4,4,http://localhost:17800/ticket-system/tickets.xhtml,39,0,1
+1771085497064,50,Update Random Ticket-1,200,OK,Test 5 - Mixed Concurrent Operations 5-9,text,true,,3561,250,4,4,http://localhost:17800/ticket-system/login.xhtml,50,0,1
+1771085497067,96,Load Tickets for Update,200,OK,Test 5 - Mixed Concurrent Operations 5-7,text,true,,3716,502,4,4,http://localhost:17800/ticket-system/login.xhtml,44,0,1
+1771085497067,44,Load Tickets for Update-0,302,Found,Test 5 - Mixed Concurrent Operations 5-7,,true,,157,252,4,4,http://localhost:17800/ticket-system/tickets.xhtml,44,0,1
+1771085497111,52,Load Tickets for Update-1,200,OK,Test 5 - Mixed Concurrent Operations 5-7,text,true,,3559,250,4,4,http://localhost:17800/ticket-system/login.xhtml,51,0,0
+1771085497114,50,Login,200,OK,Test 5 - Mixed Concurrent Operations 5-9,text,true,,3559,250,4,4,http://localhost:17800/ticket-system/login.xhtml,50,0,0
+1771085497114,105,Load Tickets Page,200,OK,Test 5 - Mixed Concurrent Operations 5-8,text,true,,3716,502,4,4,http://localhost:17800/ticket-system/login.xhtml,46,0,0
+1771085497114,46,Load Tickets Page-0,302,Found,Test 5 - Mixed Concurrent Operations 5-8,,true,,157,252,4,4,http://localhost:17800/ticket-system/tickets.xhtml,46,0,0
+1771085497164,55,Submit Login,200,OK,Test 5 - Mixed Concurrent Operations 5-9,text,true,,3559,428,4,4,http://localhost:17800/ticket-system/login.xhtml,55,0,0
+1771085497160,59,Load Tickets Page-1,200,OK,Test 5 - Mixed Concurrent Operations 5-8,text,true,,3559,250,4,4,http://localhost:17800/ticket-system/login.xhtml,59,0,0
+1771085497114,105,Load Tickets for Update,200,OK,Test 5 - Mixed Concurrent Operations 5-10,text,true,,3718,502,4,4,http://localhost:17800/ticket-system/login.xhtml,46,0,0
+1771085497114,46,Load Tickets for Update-0,302,Found,Test 5 - Mixed Concurrent Operations 5-10,,true,,157,252,4,4,http://localhost:17800/ticket-system/tickets.xhtml,46,0,0
+1771085497161,58,Load Tickets for Update-1,200,OK,Test 5 - Mixed Concurrent Operations 5-10,text,true,,3561,250,4,4,http://localhost:17800/ticket-system/login.xhtml,58,0,0
+1771085497163,102,Update Random Ticket,200,OK,Test 5 - Mixed Concurrent Operations 5-7,text,true,,3717,669,4,4,http://localhost:17800/ticket-system/login.xhtml,52,0,0
+1771085497163,52,Update Random Ticket-0,302,Found,Test 5 - Mixed Concurrent Operations 5-7,,true,,157,419,4,4,http://localhost:17800/ticket-system/tickets.xhtml,52,0,0
+1771085497215,50,Update Random Ticket-1,200,OK,Test 5 - Mixed Concurrent Operations 5-7,text,true,,3560,250,4,4,http://localhost:17800/ticket-system/login.xhtml,50,0,0
+1771085497219,92,Create Ticket,200,OK,Test 5 - Mixed Concurrent Operations 5-8,text,true,,3718,922,3,3,http://localhost:17800/ticket-system/login.xhtml,46,0,0
+1771085497219,46,Create Ticket-0,302,Found,Test 5 - Mixed Concurrent Operations 5-8,,true,,157,672,3,3,http://localhost:17800/ticket-system/tickets.xhtml,46,0,0
+1771085497265,46,Create Ticket-1,200,OK,Test 5 - Mixed Concurrent Operations 5-8,text,true,,3561,250,3,3,http://localhost:17800/ticket-system/login.xhtml,46,0,1
+1771085497219,92,Update Random Ticket,200,OK,Test 5 - Mixed Concurrent Operations 5-10,text,true,,3716,670,3,3,http://localhost:17800/ticket-system/login.xhtml,46,0,0
+1771085497219,46,Update Random Ticket-0,302,Found,Test 5 - Mixed Concurrent Operations 5-10,,true,,157,420,3,3,http://localhost:17800/ticket-system/tickets.xhtml,46,0,0
+1771085497265,46,Update Random Ticket-1,200,OK,Test 5 - Mixed Concurrent Operations 5-10,text,true,,3559,250,3,3,http://localhost:17800/ticket-system/login.xhtml,46,0,0
+1771085497219,92,Load Tickets Page,200,OK,Test 5 - Mixed Concurrent Operations 5-9,text,true,,3718,502,3,3,http://localhost:17800/ticket-system/login.xhtml,46,0,0
+1771085497219,46,Load Tickets Page-0,302,Found,Test 5 - Mixed Concurrent Operations 5-9,,true,,157,252,3,3,http://localhost:17800/ticket-system/tickets.xhtml,46,0,0
+1771085497265,46,Load Tickets Page-1,200,OK,Test 5 - Mixed Concurrent Operations 5-9,text,true,,3561,250,3,3,http://localhost:17800/ticket-system/login.xhtml,46,0,0
+1771085497311,52,Login,200,OK,Test 5 - Mixed Concurrent Operations 5-10,text,true,,3561,250,2,2,http://localhost:17800/ticket-system/login.xhtml,52,0,1
+1771085497311,96,Create Ticket,200,OK,Test 5 - Mixed Concurrent Operations 5-9,text,true,,3717,923,2,2,http://localhost:17800/ticket-system/login.xhtml,44,0,1
+1771085497311,44,Create Ticket-0,302,Found,Test 5 - Mixed Concurrent Operations 5-9,,true,,157,673,2,2,http://localhost:17800/ticket-system/tickets.xhtml,44,0,1
+1771085497355,52,Create Ticket-1,200,OK,Test 5 - Mixed Concurrent Operations 5-9,text,true,,3560,250,2,2,http://localhost:17800/ticket-system/login.xhtml,51,0,1
+1771085497363,47,Submit Login,200,OK,Test 5 - Mixed Concurrent Operations 5-10,text,true,,3560,430,1,1,http://localhost:17800/ticket-system/login.xhtml,46,0,1
+1771085497410,81,Load Tickets Page,200,OK,Test 5 - Mixed Concurrent Operations 5-10,text,true,,3716,502,1,1,http://localhost:17800/ticket-system/login.xhtml,40,0,0
+1771085497410,40,Load Tickets Page-0,302,Found,Test 5 - Mixed Concurrent Operations 5-10,,true,,157,252,1,1,http://localhost:17800/ticket-system/tickets.xhtml,40,0,0
+1771085497450,41,Load Tickets Page-1,200,OK,Test 5 - Mixed Concurrent Operations 5-10,text,true,,3559,250,1,1,http://localhost:17800/ticket-system/login.xhtml,41,0,0
+1771085497491,97,Create Ticket,200,OK,Test 5 - Mixed Concurrent Operations 5-10,text,true,,3716,922,1,1,http://localhost:17800/ticket-system/login.xhtml,50,0,1
+1771085497491,50,Create Ticket-0,302,Found,Test 5 - Mixed Concurrent Operations 5-10,,true,,157,672,1,1,http://localhost:17800/ticket-system/tickets.xhtml,50,0,1
+1771085497541,47,Create Ticket-1,200,OK,Test 5 - Mixed Concurrent Operations 5-10,text,true,,3559,250,1,1,http://localhost:17800/ticket-system/login.xhtml,47,0,1

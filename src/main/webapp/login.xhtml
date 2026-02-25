@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+<h:head>
+    <title>Login</title>
+</h:head>
+<h:body>
+    <h1>Login</h1>
+    <h:form>
+        <p:messages/>
+        <p:panelGrid columns="2">
+            <h:outputLabel value="Username:"/>
+            <p:inputText value="#{authBean.username}"/>
+
+            <h:outputLabel value="Password:"/>
+            <p:password value="#{authBean.password}"/>
+        </p:panelGrid>
+
+        <p:commandButton value="Login" action="#{authBean.login()}"/>
+    </h:form>
+
+    <p>Default users: admin/admin, user/user</p>
+</h:body>
+</html>
